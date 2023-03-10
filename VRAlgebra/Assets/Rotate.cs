@@ -6,22 +6,17 @@ public class Rotate : MonoBehaviour
 {
 
     public float rotationSpeed = 0.2f;
-    static public Quaternion nearestState = Quaternion.Euler(0, 0, 0);
-    //public allRotations Quaternion = new Quaternion[24];
+    static public Quaternion[] allRotations = GenerateRotations();
+    public int test = 0;
 
-    /*void start()
-    {
-        for (int i = 0; i <= 3; i++)
-            allRotations[i] = Quaternion.Euler(i * 90, 0, 0);
-        for (int i = 0; i <= 3; i++)
-            allRotations[i + 4] = Quaternion.Euler(0, i * 90, 0);
-        for (int i = 0; i <= 3; i++)
-            allRotations[i + 8] = Quaternion.Euler(0, 0, 90 * i);
-    }*/
 
-    void Update()
+    void start()
     {
 
+    }
+
+    void update()
+    {
     }
 
     //Rotate the object with the mouse
@@ -29,19 +24,19 @@ public class Rotate : MonoBehaviour
     {
         float XaxisRotation = Input.GetAxis("Mouse X") * rotationSpeed;
         float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSpeed;
-        // select the axis by which you want to rotate the GameObject
+        //select the axis by which you want to rotate the GameObject
         transform.RotateAround(Vector3.down, XaxisRotation);
         transform.RotateAround(Vector3.right, YaxisRotation);
     }
 
-
     //Go back to original state
     void OnMouseUp()
     {
-        var angle = Quaternion.Angle(transform.rotation, nearestState);
-        StartCoroutine(PerformRotation(nearestState));
+        Quaternion closest = ClosestRotation(allRotations);
+        StartCoroutine(PerformRotation(closest));
     }
 
+    //Perform the rotation to a target rotation
     IEnumerator PerformRotation(Quaternion targetRotation)
     {
         float progress = 0f;
@@ -60,15 +55,43 @@ public class Rotate : MonoBehaviour
     }
 
 
-
-    /*static Quaternion ClosestRotation(Quaternion[] allRotations)
+    //Generate all rotations
+    static Quaternion[] GenerateRotations()
     {
-		Quaternion closest;
-		foreach(Quaternion v in allRotations)
+        Quaternion[] allRotations = new Quaternion[24];
+        //
+        for (int i = 0; i <= 3; i++)
+            allRotations[i] = Quaternion.AngleAxis(i * 90, new Vector3(0, 1, 0));
+        for (int i = 0; i <= 2; i++)
+            allRotations[i + 4] = Quaternion.AngleAxis(90 + i * 90, new Vector3(1, 0, 0));
+        for (int i = 0; i <= 3; i++)
+            allRotations[i + 7] = Quaternion.AngleAxis(90 + i * 90, new Vector3(0, 0, 1));
+        //
+        for (int i = 0; i <= 2; i++)
+            allRotations[i + 10] = Quaternion.AngleAxis(180, new Vector3((i + 1) % 3 - 1, (i - 1) % 3 - 1, i % 3 - 1));
+        for (int i = 0; i <= 2; i++)
+            allRotations[i + 13] = Quaternion.AngleAxis(180, new Vector3((i - 1) % 3 - 1, (i + 1) % 3 - 1, i % 3 - 1));
+        //
+        for (int i = 0; i <= 1; i += 1)
         {
-			if (Quaternion.Angle(transform.rotation, v) < smallest)
-				closest = v;
-		}
-		return closest;
-    }*/
+            allRotations[4 * i + 15] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(-1, -1, 1));
+            allRotations[4 * i + 17] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(-1, 1, 1));
+            allRotations[4 * i + 18] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(1, -1, 1));
+            allRotations[4 * i + 19] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(1, 1, 1));
+        }
+
+        return allRotations;
+    }
+
+    //Finded the nearest Rotation
+    Quaternion ClosestRotation(Quaternion[] rotations)
+    {
+        Quaternion closest = rotations[0];
+        for (int i = 0; i < rotations.Length; i++)
+        {
+            if (Quaternion.Angle(transform.rotation, rotations[i]) < Quaternion.Angle(transform.rotation, closest))
+                closest = rotations[i];
+        }
+        return closest;
+    }
 }

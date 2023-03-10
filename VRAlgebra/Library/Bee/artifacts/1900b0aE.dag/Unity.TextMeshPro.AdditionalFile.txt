@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-C:\Users\sstee\Documents\Github\algebra-in-vr\VRAlgebra
-=======
 C:\Users\fjslo\Documents\GitHub\algebra-in-vr\VRAlgebra
->>>>>>> Stashed changes
