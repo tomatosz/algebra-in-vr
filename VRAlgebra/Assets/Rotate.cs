@@ -7,8 +7,7 @@ public class Rotate : MonoBehaviour
 
 	public float rotationSpeed = 0.2f;
 	static public Quaternion[] allRotations = GenerateRotations();
-	public int test = 0;
-
+	public Renderer  = rendering;
 
 	void start()
 	{
@@ -17,6 +16,7 @@ public class Rotate : MonoBehaviour
 
 	void update()
 	{
+		ChangeColor();
 	}
 
 	//Rotate the object with the mouse
@@ -27,13 +27,15 @@ public class Rotate : MonoBehaviour
 		//select the axis by which you want to rotate the GameObject
 		transform.RotateAround(Vector3.down, XaxisRotation);
 		transform.RotateAround(Vector3.right, YaxisRotation);
+
 	}
 
 	//Go back to original state
 	void OnMouseUp()
 	{
 		Quaternion closest = ClosestRotation(allRotations);
-		StartCoroutine(PerformRotation(closest));
+		if (Quaternion.Angle(transform.rotation,closest)<20)
+			StartCoroutine(PerformRotation(closest));
 	}
 
 	//Perform the rotation to a target rotation
@@ -64,13 +66,13 @@ public class Rotate : MonoBehaviour
 			allRotations[i] = Quaternion.AngleAxis(i * 90, new Vector3(0, 1, 0));
 		for (int i = 0; i <= 2; i++)
 			allRotations[i + 4] = Quaternion.AngleAxis(90 + i * 90, new Vector3(1, 0, 0));
-		for (int i = 0; i <= 3; i++)
+		for (int i = 0; i <= 2; i++)
 			allRotations[i + 7] = Quaternion.AngleAxis(90 + i * 90, new Vector3(0, 0, 1));
 		//
 		for (int i = 0; i <= 2; i++)
-			allRotations[i + 10] = Quaternion.AngleAxis(180, new Vector3((i + 1) % 3 - 1, (i - 1) % 3 - 1, i % 3 - 1));
+			allRotations[i + 10] = Quaternion.AngleAxis(180, new Vector3((i + 1) % 3 - 1, (i +2) % 3 - 1, i % 3 - 1));
 		for (int i = 0; i <= 2; i++)
-			allRotations[i + 13] = Quaternion.AngleAxis(180, new Vector3((i - 1) % 3 - 1, (i + 1) % 3 - 1, i % 3 - 1));
+			allRotations[i + 13] = Quaternion.AngleAxis(180, new Vector3((i +2) % 3 - 1, (i + 1) % 3 - 1, i % 3 - 1));
 		//
 		for (int i = 0; i <= 1; i += 1)
 		{
@@ -87,12 +89,21 @@ public class Rotate : MonoBehaviour
 	Quaternion ClosestRotation(Quaternion[] rotations)
 	{
 		Quaternion closest = rotations[0];
-		for (int i =0; i< rotations.Length;i++)
+		for (int i =0; i < rotations.Length;i++)
 		{
 			if (Quaternion.Angle(transform.rotation, rotations[i]) < Quaternion.Angle(transform.rotation,closest))
 				closest = rotations[i];
 		}
 		return closest;
+	}
+
+	void ChangeColor()
+    {
+		Quaternion closest = ClosestRotation(allRotations);
+		if (Quaternion.Angle(transform.rotation, closest) < 20)
+			GetComponent<rendering>.material.color = new Color(0f, 1f, 0f);
+		else
+			GetComponent<rendering>.material.color = new Color(1f, 0f, 0f);
 	}
 }
 
