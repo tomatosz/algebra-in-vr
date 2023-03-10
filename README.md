@@ -1,5 +1,7 @@
 # algebra-in-vr
 
+Using Github:
+
 1. Download GIT
 2. (Recommended) download Gitkraken or some other program to help you work with GIT
 3. Create a branch
