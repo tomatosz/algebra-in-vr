@@ -1,13 +1,17 @@
 # algebra-in-vr
 
-Using Github:
+## Getting started with GitHub;
+1. Download GIT, and ideally some UI like Github Desktop or GitKraken.
+2. Clone the repository. From here on out, work in the folder of this clone.
 
-1. Download GIT
-2. (Recommended) download Gitkraken or some other program to help you work with GIT (can just use GIT GUI though)
-3. Pull the repository
-3. Create a branch
-5. Change files in the branch as you like
-6. Stage & commit the changes
-7. Push the committed changes (so it gets uploaded)
-8. Open a pull request (so it can be merged)
-9. Merge the pull request (idk whether everyone can do that or just me as owner)
+## Working on the code;
+1. Pull the repository.
+2. Create a branch (name it something clear; your name and maybe also what you're working on)
+3. Change files in the branch as you like
+4. Stage and commit changes when you made a relevant update (or just when you want an updated version for version control). Give it a clear name so you can keep track of what changed!
+5. Push the committed changes (so it gets uploaded and the others can actually see it!)
+
+## When you have made progress that everyone should continue to use;
+Open a pull request, so your branch will be merged with the main branch.
+
+Afterwards, create a new branch to work on new stuff.
