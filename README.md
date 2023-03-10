@@ -3,7 +3,7 @@
 Using Github:
 
 1. Download GIT
-2. (Recommended) download Gitkraken or some other program to help you work with GIT
+2. (Recommended) download Gitkraken or some other program to help you work with GIT (can just use GIT GUI though)
 3. Create a branch
 4. Pull the branch
 5. Change files in the pulled branch as you like
