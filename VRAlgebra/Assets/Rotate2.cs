@@ -10,6 +10,8 @@ public class Rotate2 : MonoBehaviour
     public Material Redtransp;
     public Material Greentransp;
     public Material Transparant;
+    public bool Tetraok=true;
+    private int[] teraederrotationsindex = { 0, 2, 5, 8, 16, 17, 18, 19, 20, 21, 22, 23 };
 
 
 
@@ -97,11 +99,26 @@ public class Rotate2 : MonoBehaviour
     //Finded the nearest Rotation
     Quaternion ClosestRotation(Quaternion[] rotations)
     {
+        int indexclosest=0;
+        
         Quaternion closest = rotations[0];
         for (int i = 0; i < rotations.Length; i++)
         {
             if (Quaternion.Angle(transform.rotation, rotations[i]) < Quaternion.Angle(transform.rotation, closest))
+            {
                 closest = rotations[i];
+                indexclosest = i;
+            }
+        }
+        this.Tetraok = false;
+        for(int j=0;j<12;j++)
+        {
+            if (indexclosest == teraederrotationsindex[j])
+            {
+                this.Tetraok = true;
+                
+            }
+            
         }
         return closest;
     }
