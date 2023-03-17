@@ -78,11 +78,11 @@ public class Rotate : MonoBehaviour
         for (int i = 0; i <= 2; i++)
             allRotations[i + 10] = Quaternion.AngleAxis(180, new Vector3((i + 1) % 3 - 1, (i + 2) % 3 - 1, i % 3 - 1));
         for (int i = 0; i <= 2; i++)
-            allRotations[i + 13] = Quaternion.AngleAxis(180, new Vector3((i + 2) % 3 - 1, (i + 1) % 3 - 1, i % 3 - 1));
+            allRotations[i + 13] = Quaternion.AngleAxis(180, new Vector3(((i + 2) % 3 - 1)* ((i + 2) % 3 - 1), ((i + 1) % 3 - 1)* ((i + 1) % 3 - 1), (i % 3 - 1)* (i % 3 - 1)));
         //
         for (int i = 0; i <= 1; i += 1)
         {
-            allRotations[4 * i + 15] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(-1, -1, 1));
+            allRotations[4 * i + 16] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(-1, -1, 1));
             allRotations[4 * i + 17] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(-1, 1, 1));
             allRotations[4 * i + 18] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(1, -1, 1));
             allRotations[4 * i + 19] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(1, 1, 1));
