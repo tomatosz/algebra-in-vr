@@ -9,6 +9,7 @@ public class ChooseAxis : MonoBehaviour
 	public Vector3 axis = new Vector3(0,1,0);
 	public string axisName = "r";
 	//public Renderer = rendering;
+	public bool canChangeAxis = true;
 
 	void Start()
 	{
@@ -19,52 +20,57 @@ public class ChooseAxis : MonoBehaviour
 	{
 		if (Input.GetKeyDown("r"))
 		{
-			axis = new Vector3(0, 1, 0);
-			Debug.Log("r");
+			if (canChangeAxis == true)
+			{
+				axis = new Vector3(0, 1, 0);
+				axisName = "r";
+				Debug.Log("r");
+			}
 		}
 
 		if (Input.GetKeyDown("t"))
 		{
-			axis = new Vector3(0,1,1);
-			Debug.Log("t");
+			if (canChangeAxis == true)
+			{
+				axis = new Vector3(0, 1, 1);
+				axisName = "t";
+				Debug.Log("t");
+			}
 		}
 
 		if (Input.GetKeyDown("s"))
 		{
-			axis = new Vector3(1, 1, 1);
-			Debug.Log("s");
+			if (canChangeAxis == true)
+			{
+				axis = new Vector3(1, 1, 1);
+				axisName = "s";
+				Debug.Log("s");
+			}
 		}
 	}
 
 	//Rotate the object with the mouse
 	void OnMouseDrag()
 	{
-		float XaxisRotation = Input.GetAxis("Mouse X") * rotationSpeed;
+		canChangeAxis = false;
+		float XaxisRotation = - Input.GetAxis("Mouse X") * rotationSpeed;
 		float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSpeed;
 		//select the axis by which you want to rotate the GameObject
-		transform.RotateAround(axis, -XaxisRotation);
-		transform.RotateAround(axis, -YaxisRotation);
-		this.GetComponent<Renderer>().material.color = Color.white;
-
+		transform.RotateAround(axis, XaxisRotation);
+		
 	}
 
 	//Go back to original state
 	void OnMouseUp()
 	{
 		Quaternion closest = ClosestRotation(allRotations);
-		this.GetComponent<Renderer>().material.color = Color.green;
-		StartCoroutine(PerformRotation(closest));
+		//StartCoroutine(PerformRotation(closest));
 
-		/*if (Quaternion.Angle(transform.rotation, closest) < 20)
+		if (Quaternion.Angle(transform.rotation, closest) < 20)
 		{
-			this.GetComponent<Renderer>().material.color = Color.green;
 			StartCoroutine(PerformRotation(closest));
+			canChangeAxis = true;
 		}
-
-		else
-		{
-			this.GetComponent<Renderer>().material.color = Color.red;
-		}*/
 	}
 
 	//Perform the rotation to a target rotation
