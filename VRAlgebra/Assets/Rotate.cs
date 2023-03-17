@@ -27,13 +27,21 @@ public class Rotate : MonoBehaviour
         //select the axis by which you want to rotate the GameObject
         transform.RotateAround(Vector3.down, XaxisRotation);
         transform.RotateAround(Vector3.right, YaxisRotation);
+        this.GetComponent<Renderer>().material.color = Color.white;
     }
 
     //Go back to original state
     void OnMouseUp()
     {
         Quaternion closest = ClosestRotation(allRotations);
-        StartCoroutine(PerformRotation(closest));
+        if(Quaternion.Angle(transform.rotation, closest)<20)
+        {
+            StartCoroutine(PerformRotation(closest));
+            this.GetComponent<Renderer>().material.color = Color.green;
+        }
+        else
+            this.GetComponent<Renderer>().material.color = Color.red;
+
     }
 
     //Perform the rotation to a target rotation

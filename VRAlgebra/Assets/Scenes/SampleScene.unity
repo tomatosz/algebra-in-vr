@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 127887913}
   - component: {fileID: 127887912}
   - component: {fileID: 127887911}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 364058001}
   - component: {fileID: 364058000}
   - component: {fileID: 364057999}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 465243444}
   - component: {fileID: 465243443}
   - component: {fileID: 465243442}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 807309346}
   - component: {fileID: 807309345}
   - component: {fileID: 807309344}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807309342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalPosition: {x: 0, y: 0, z: -0.501}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -676,7 +676,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 08d75c2022ce5ed4d81330369f618a73, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -804,7 +804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.45, z: -2.51}
+  m_LocalPosition: {x: -0.1, y: 0.14, z: -2.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 1067856907}
   - component: {fileID: 1067856906}
   - component: {fileID: 1067856905}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 1596179254}
   - component: {fileID: 1596179253}
   - component: {fileID: 1596179252}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
