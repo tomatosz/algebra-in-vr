@@ -6,12 +6,12 @@ public class Rotate : MonoBehaviour
 {
 
 	public float rotationSpeed = 0.2f;
-	static public Quaternion[] allRotations = GenerateRotations();
-	public Renderer  = rendering;
+	static public Quaternion[] allRotations = GenerateRotationsCube();
+	//public Renderer = rendering;
 
 	void start()
 	{
-		
+
 	}
 
 	void update()
@@ -27,6 +27,7 @@ public class Rotate : MonoBehaviour
 		//select the axis by which you want to rotate the GameObject
 		transform.RotateAround(Vector3.down, XaxisRotation);
 		transform.RotateAround(Vector3.right, YaxisRotation);
+		this.GetComponent<Renderer>().material.color = Color.blue;
 
 	}
 
@@ -34,8 +35,16 @@ public class Rotate : MonoBehaviour
 	void OnMouseUp()
 	{
 		Quaternion closest = ClosestRotation(allRotations);
-		if (Quaternion.Angle(transform.rotation,closest)<20)
+		if (Quaternion.Angle(transform.rotation, closest) < 20)
+		{
+			this.GetComponent<Renderer>().material.color = Color.green;
 			StartCoroutine(PerformRotation(closest));
+		}
+
+		else
+		{
+			this.GetComponent<Renderer>().material.color = Color.red;
+		}
 	}
 
 	//Perform the rotation to a target rotation
@@ -57,8 +66,8 @@ public class Rotate : MonoBehaviour
 	}
 
 
-	//Generate all rotations
-	static Quaternion[] GenerateRotations()
+	//Generate all rotations for the cube/octahedron
+	static Quaternion[] GenerateRotationsCube()
     {
 		Quaternion[] allRotations = new Quaternion[24];
 		//
@@ -89,7 +98,7 @@ public class Rotate : MonoBehaviour
 	Quaternion ClosestRotation(Quaternion[] rotations)
 	{
 		Quaternion closest = rotations[0];
-		for (int i =0; i < rotations.Length;i++)
+		for (int i =1; i < rotations.Length;i++)
 		{
 			if (Quaternion.Angle(transform.rotation, rotations[i]) < Quaternion.Angle(transform.rotation,closest))
 				closest = rotations[i];
@@ -101,9 +110,9 @@ public class Rotate : MonoBehaviour
     {
 		Quaternion closest = ClosestRotation(allRotations);
 		if (Quaternion.Angle(transform.rotation, closest) < 20)
-			GetComponent<rendering>.material.color = new Color(0f, 1f, 0f);
+			this.GetComponent<Renderer>().material.color = Color.green;
 		else
-			GetComponent<rendering>.material.color = new Color(1f, 0f, 0f);
+			this.GetComponent<Renderer>().material.color = Color.red;
 	}
 }
 
