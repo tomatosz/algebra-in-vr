@@ -9,14 +9,12 @@ public class Rotate : MonoBehaviour
 	static public Quaternion[] allRotations = GenerateRotationsCube();
 	//public Renderer = rendering;
 
-	void start()
+	void Start()
 	{
-
 	}
 
-	void update()
+	void Update()
 	{
-		ChangeColor();
 	}
 
 	//Rotate the object with the mouse
@@ -27,7 +25,7 @@ public class Rotate : MonoBehaviour
 		//select the axis by which you want to rotate the GameObject
 		transform.RotateAround(Vector3.down, XaxisRotation);
 		transform.RotateAround(Vector3.right, YaxisRotation);
-		this.GetComponent<Renderer>().material.color = Color.blue;
+		this.GetComponent<Renderer>().material.color = Color.white;
 
 	}
 
@@ -81,11 +79,11 @@ public class Rotate : MonoBehaviour
 		for (int i = 0; i <= 2; i++)
 			allRotations[i + 10] = Quaternion.AngleAxis(180, new Vector3((i + 1) % 3 - 1, (i +2) % 3 - 1, i % 3 - 1));
 		for (int i = 0; i <= 2; i++)
-			allRotations[i + 13] = Quaternion.AngleAxis(180, new Vector3((i +2) % 3 - 1, (i + 1) % 3 - 1, i % 3 - 1));
+			allRotations[i + 13] = Quaternion.AngleAxis(180, new Vector3(((i + 2) % 3 - 1) * ((i + 2) % 3 - 1), ((i + 1) % 3 - 1) * ((i + 1) % 3 - 1), (i % 3 - 1) * (i % 3 - 1)));
 		//
 		for (int i = 0; i <= 1; i += 1)
 		{
-			allRotations[4 * i + 15] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(-1, -1, 1));
+			allRotations[4 * i + 16] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(-1, -1, 1));
 			allRotations[4 * i + 17] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(-1, 1, 1));
 			allRotations[4 * i + 18] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(1, -1, 1));
 			allRotations[4 * i + 19] = Quaternion.AngleAxis(120 + 120 * i, new Vector3(1, 1, 1));
@@ -104,15 +102,6 @@ public class Rotate : MonoBehaviour
 				closest = rotations[i];
 		}
 		return closest;
-	}
-
-	void ChangeColor()
-    {
-		Quaternion closest = ClosestRotation(allRotations);
-		if (Quaternion.Angle(transform.rotation, closest) < 20)
-			this.GetComponent<Renderer>().material.color = Color.green;
-		else
-			this.GetComponent<Renderer>().material.color = Color.red;
 	}
 }
 
