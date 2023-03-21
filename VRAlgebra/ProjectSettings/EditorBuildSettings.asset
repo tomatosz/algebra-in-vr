@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/EmbeddedObjectMenu.unity
     guid: c651734d6249c9249b881af5daf16897
   - enabled: 1
-    path: Assets/Scenes/OneObjectCube.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/TwoObjectCube.unity
+    guid: dfe575193a9794740ab13175e883182c
   m_configObjects: {}
