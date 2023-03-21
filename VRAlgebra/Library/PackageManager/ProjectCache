@@ -5,26 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
       ticks: 638150110095361824
     m_Hash: 3719723510
-=======
-      ticks: 638150084473371130
-    m_Hash: 1411460284
->>>>>>> combine
   m_LockFileStatus:
     m_FilePath: C:/Users/sstee/Documents/Github/algebra-in-vr/VRAlgebra/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
       ticks: 638150110095776771
     m_Hash: 1443763247
-=======
-      ticks: 638150084473381153
-    m_Hash: 4090777657
->>>>>>> combine
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
