@@ -348,21 +348,17 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-<<<<<<< HEAD
 "Assets/Scripts/Axis.cs"
 "Assets/Scripts/ChooseAxis.cs"
 "Assets/Scripts/FixedRotate.cs"
 "Assets/Scripts/MainMenuScripts.cs"
+"Assets/Scripts/Octahedron.cs"
 "Assets/Scripts/OneObjectScripts.cs"
 "Assets/Scripts/Return.cs"
 "Assets/Scripts/Rotate.cs"
+"Assets/Scripts/Rotate2.cs"
+"Assets/Scripts/Tetrahedron.cs"
 "Assets/Scripts/TwoObjectScripts.cs"
-=======
-"Assets/MainMenuScripts.cs"
-"Assets/OneObjectScripts.cs"
-"Assets/Return.cs"
-"Assets/Rotate.cs"
->>>>>>> combine
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
@@ -397,7 +393,6 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
-"Assets/TwoObjectScripts.cs"
 -langversion:9.0
 
 /deterministic
