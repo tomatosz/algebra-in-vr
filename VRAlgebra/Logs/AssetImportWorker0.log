@@ -15,7 +15,7 @@ D:/Sharon/Documents/Unity stuff/algebra-in-vr/VRAlgebra
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50945
+51347
 Successfully changed project path to: D:/Sharon/Documents/Unity stuff/algebra-in-vr/VRAlgebra
 D:/Sharon/Documents/Unity stuff/algebra-in-vr/VRAlgebra
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ D:/Sharon/Documents/Unity stuff/algebra-in-vr/VRAlgebra
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9016] Host "[IP] 192.168.1.105 [Port] 0 [Flags] 2 [Guid] 2076501313 [EditorId] 2076501313 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M6U6G09) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [1120] Host "[IP] 192.168.1.105 [Port] 0 [Flags] 2 [Guid] 375460263 [EditorId] 375460263 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M6U6G09) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9016] Host "[IP] 192.168.1.105 [Port] 0 [Flags] 2 [Guid] 2076501313 [EditorId] 2076501313 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M6U6G09) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1120] Host "[IP] 192.168.1.105 [Port] 0 [Flags] 2 [Guid] 375460263 [EditorId] 375460263 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-M6U6G09) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 102.35 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 102.38 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.19f1 (c9714fde33b6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -67,96 +67,152 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56868
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56684
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012782 seconds.
+Registered in 0.012960 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 353 ms
+Android Extension - Scanning For ADB Devices 343 ms
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 96.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 169.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.178 seconds
+- Completed reload, in  1.296 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1178ms)
-		BeginReloadAssembly (96ms)
+	ReloadAssembly (1296ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (940ms)
-			LoadAssemblies (95ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1036ms)
+			LoadAssemblies (109ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (137ms)
+			SetupTypeCache (135ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (702ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (801ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (451ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (97ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (103ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
+				InitializePlatformSupportModulesInManaged (459ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (170ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (113ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005569 seconds.
+Registered in 0.006286 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001B340924660 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B34178A010 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B340924660 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B340924660 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E25B100 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E271F10 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E271F10 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341F45020 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341F4E430 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E28C920 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3406FE020 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3414A60A0 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3406FE020 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3414A60A0 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341F4E430 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3417D7E50 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3414BB6B0 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341F56440 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341F56440 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B34072D430 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3414BB6B0 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341591020 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3414CE2C0 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341591020 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3415CE430 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B340751850 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E3BC010 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B340096030 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.232 seconds
+- Completed reload, in  1.317 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1233ms)
-		BeginReloadAssembly (137ms)
+	ReloadAssembly (1318ms)
+		BeginReloadAssembly (135ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (953ms)
-			LoadAssemblies (109ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1028ms)
+			LoadAssemblies (108ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (319ms)
+			SetupTypeCache (374ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (406ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (393ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
+				InitializePlatformSupportModulesInManaged (25ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (97ms)
-				ProcessInitializeOnLoadAttributes (251ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (235ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 24 unused Assets / (113.9 KB). Loaded Objects now: 3563.
 Memory consumption went from 111.4 MB to 111.2 MB.
-Total: 3.709400 ms (FindLiveObjects: 0.291200 ms CreateObjectMapping: 0.261200 ms MarkObjects: 3.011600 ms  DeleteObjects: 0.144200 ms)
+Total: 3.396300 ms (FindLiveObjects: 0.269200 ms CreateObjectMapping: 0.196500 ms MarkObjects: 2.770800 ms  DeleteObjects: 0.159100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -171,13 +227,138 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 542660.383270 seconds.
-  path: Assets/Scenes/OneObjectCube.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/OneObjectCube.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053317efdc6d7951e5c5705a56738a01') in 0.022562 seconds 
+  Time since last request: 545590.602150 seconds.
+  path: Assets/Prefabs/Cube.prefab
+  artifactKey: Guid(b07d134c2e413d3449870da7f39f6cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cube.prefab using Guid(b07d134c2e413d3449870da7f39f6cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b25a5d2554f72aacd6f37a4d009aa17a') in 0.381726 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.539428 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d30653f8fc02a3565522b15ae2ee97d') in 0.010682 seconds 
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/Room.prefab
+  artifactKey: Guid(9f55f08ed1f9e634bba718f1d0d67bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Room.prefab using Guid(9f55f08ed1f9e634bba718f1d0d67bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0f3d0d3656e0bf4b6233a2990bf1cc') in 0.173637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.949698 seconds.
+  path: Assets/Scripts/MainMenuScripts.cs
+  artifactKey: Guid(cdb71557a8e64194ca0cb1e46e586549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MainMenuScripts.cs using Guid(cdb71557a8e64194ca0cb1e46e586549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5fa2865763c44a552737e1b3be68d1') in 0.087157 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005583 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001B342F1C020 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341577030 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341577030 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B343252010 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341577030 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3463F3770 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B34157CC40 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E525040 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E525040 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B34178A010 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B343252010 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3461CD9C0 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341B30010 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E525040 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B34640E180 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B342F1C020 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B34640E180 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B34640E180 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341B30010 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E525040 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33DEEEE90 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E525040 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E525040 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B341FFF010 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B33E52BA50 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B3457CAC30 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001B342F31230 doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Sharon\Documents\Unity stuff\algebra-in-vr\VRAlgebra\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.383 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1384ms)
+		BeginReloadAssembly (212ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (1035ms)
+			LoadAssemblies (138ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (443ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (346ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (35ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (80.4 KB). Loaded Objects now: 3578.
+Memory consumption went from 114.4 MB to 114.4 MB.
+Total: 3.032600 ms (FindLiveObjects: 0.250600 ms CreateObjectMapping: 0.149200 ms MarkObjects: 2.507300 ms  DeleteObjects: 0.124600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 17.263455 seconds.
+  path: Assets/Red.mat
+  artifactKey: Guid(66e5a84d5bc2fb946bff6a453023cb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red.mat using Guid(66e5a84d5bc2fb946bff6a453023cb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce10990cb62097d4bf9a01974d4dd3cb') in 0.173184 seconds 
