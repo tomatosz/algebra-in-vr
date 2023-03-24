@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 659585885}
   - component: {fileID: 659585884}
   - component: {fileID: 659585883}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 891714649}
   - component: {fileID: 891714648}
   - component: {fileID: 891714647}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 1258415619}
   - component: {fileID: 1258415618}
   - component: {fileID: 1258415617}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 1645092193}
   - component: {fileID: 1645092192}
   - component: {fileID: 1645092191}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -822,7 +822,7 @@ GameObject:
   - component: {fileID: 1664765013}
   - component: {fileID: 1664765012}
   - component: {fileID: 1664765011}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -920,7 +920,7 @@ GameObject:
   - component: {fileID: 2142421431}
   - component: {fileID: 2142421430}
   - component: {fileID: 2142421429}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Side4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

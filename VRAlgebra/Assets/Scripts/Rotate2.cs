@@ -39,14 +39,16 @@ public class Rotate2 : MonoBehaviour
     void OnMouseUp()
     {
         Quaternion closest = ClosestRotation(allRotations);
-        if(Quaternion.Angle(transform.rotation, closest)<20)
+        if (Quaternion.Angle(transform.rotation, closest) < 20)
         {
             StartCoroutine(PerformRotation(closest));
             this.GetComponent<MeshRenderer>().material = Greentransp;
         }
         else
+        {
             this.GetComponent<MeshRenderer>().material = Redtransp;
-
+            this.Tetraok = false;
+        }
     }
 
     //Perform the rotation to a target rotation
