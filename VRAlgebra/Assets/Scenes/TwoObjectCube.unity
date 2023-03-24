@@ -237,6 +237,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0573f8a500a61c40863961259288245, type: 3}
+--- !u!1 &430505357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8957916157015901669, guid: c0573f8a500a61c40863961259288245, type: 3}
+  m_PrefabInstance: {fileID: 430505356}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &430505358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9018227769736473801, guid: c0573f8a500a61c40863961259288245, type: 3}
+  m_PrefabInstance: {fileID: 430505356}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &430505359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5319042825945322161, guid: c0573f8a500a61c40863961259288245, type: 3}
+  m_PrefabInstance: {fileID: 430505356}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &430505360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2216019073490463500, guid: c0573f8a500a61c40863961259288245, type: 3}
+  m_PrefabInstance: {fileID: 430505356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &646181831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -244,6 +264,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7993783328879008508, guid: 0c10f84c1cf8a314b91595fc600cfe47, type: 3}
+      propertyPath: MainMenu
+      value: 
+      objectReference: {fileID: 430505357}
+    - target: {fileID: 7993783328879008508, guid: 0c10f84c1cf8a314b91595fc600cfe47, type: 3}
+      propertyPath: OneObjectMenu
+      value: 
+      objectReference: {fileID: 430505359}
+    - target: {fileID: 7993783328879008508, guid: 0c10f84c1cf8a314b91595fc600cfe47, type: 3}
+      propertyPath: TwoObjectMenu
+      value: 
+      objectReference: {fileID: 430505358}
+    - target: {fileID: 7993783328879008508, guid: 0c10f84c1cf8a314b91595fc600cfe47, type: 3}
+      propertyPath: EmbeddedObjectMenu
+      value: 
+      objectReference: {fileID: 430505360}
     - target: {fileID: 7993783328879008509, guid: 0c10f84c1cf8a314b91595fc600cfe47, type: 3}
       propertyPath: m_Name
       value: GameManager

@@ -9,6 +9,7 @@ public class MainMenuScripts : MonoBehaviour
     public GameObject TwoObjectMenu;
     public GameObject EmbeddedObjectMenu;
     public GameObject MainMenu;
+    public GameObject Settings;
 
     public void CallOneObjectMenu()
     {
@@ -25,6 +26,13 @@ public class MainMenuScripts : MonoBehaviour
     public void CallEmbeddedObjectMenu()
     {
         EmbeddedObjectMenu.SetActive(true);
+        MainMenu.SetActive(false);
+    }
+
+
+    public void CallSettings()
+    {
+        Settings.SetActive(true);
         MainMenu.SetActive(false);
     }
 }

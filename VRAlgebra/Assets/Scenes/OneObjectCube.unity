@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &501093615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8957916157015901669, guid: c0573f8a500a61c40863961259288245, type: 3}
+  m_PrefabInstance: {fileID: 3751898692510702423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +290,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &959120075 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2216019073490463500, guid: c0573f8a500a61c40863961259288245, type: 3}
+  m_PrefabInstance: {fileID: 3751898692510702423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &981438187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9018227769736473801, guid: c0573f8a500a61c40863961259288245, type: 3}
+  m_PrefabInstance: {fileID: 3751898692510702423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1125233269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -342,6 +357,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
+--- !u!1 &1445310826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1094656336303866779, guid: c0573f8a500a61c40863961259288245, type: 3}
+  m_PrefabInstance: {fileID: 3751898692510702423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1483764001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5319042825945322161, guid: c0573f8a500a61c40863961259288245, type: 3}
+  m_PrefabInstance: {fileID: 3751898692510702423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1708976067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6466412967302032081, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
+  m_PrefabInstance: {fileID: 1125233269}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &326423220002279700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,6 +436,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1094656335370592321, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: EmbeddedObjectMenu
+      value: 
+      objectReference: {fileID: 959120075}
     - target: {fileID: 3751898693464454691, guid: c0573f8a500a61c40863961259288245, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -454,6 +488,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 4281545232235857877, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: LabelVisibility
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8822121842849188894, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: Labels
+      value: 
+      objectReference: {fileID: 1708976067}
+    - target: {fileID: 8822121842849188894, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: LabelVisibility
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0573f8a500a61c40863961259288245, type: 3}
 --- !u!1001 &7993783329549361741
@@ -463,6 +509,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7993783328879008508, guid: 0c10f84c1cf8a314b91595fc600cfe47, type: 3}
+      propertyPath: MainMenu
+      value: 
+      objectReference: {fileID: 501093615}
+    - target: {fileID: 7993783328879008508, guid: 0c10f84c1cf8a314b91595fc600cfe47, type: 3}
+      propertyPath: Settings
+      value: 
+      objectReference: {fileID: 1445310826}
+    - target: {fileID: 7993783328879008508, guid: 0c10f84c1cf8a314b91595fc600cfe47, type: 3}
+      propertyPath: OneObjectMenu
+      value: 
+      objectReference: {fileID: 1483764001}
+    - target: {fileID: 7993783328879008508, guid: 0c10f84c1cf8a314b91595fc600cfe47, type: 3}
+      propertyPath: TwoObjectMenu
+      value: 
+      objectReference: {fileID: 981438187}
+    - target: {fileID: 7993783328879008508, guid: 0c10f84c1cf8a314b91595fc600cfe47, type: 3}
+      propertyPath: EmbeddedObjectMenu
+      value: 
+      objectReference: {fileID: 959120075}
     - target: {fileID: 7993783328879008509, guid: 0c10f84c1cf8a314b91595fc600cfe47, type: 3}
       propertyPath: m_Name
       value: GameManager
