@@ -6,7 +6,7 @@ public class ChooseAxis : MonoBehaviour
 {
 	public float rotationSpeed = 0.2f;
 	static public Quaternion[] allRotations = GenerateRotationsCube();
-	public Vector3 axis = new Vector3(0,1,0);
+	public Vector3 axis = new Vector3(0, 1, 0);
 	public string axisName = "r";
 	//public Renderer = rendering;
 	public bool canChangeAxis = true;
@@ -49,15 +49,17 @@ public class ChooseAxis : MonoBehaviour
 		}
 	}
 
+
+
 	//Rotate the object with the mouse
 	void OnMouseDrag()
 	{
 		canChangeAxis = false;
-		float XaxisRotation = - Input.GetAxis("Mouse X") * rotationSpeed;
+		float XaxisRotation = -Input.GetAxis("Mouse X") * rotationSpeed;
 		float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSpeed;
 		//select the axis by which you want to rotate the GameObject
 		transform.RotateAround(axis, XaxisRotation);
-		
+
 	}
 
 	//Go back to original state
