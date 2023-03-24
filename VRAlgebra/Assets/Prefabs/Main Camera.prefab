@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3751898693464454691}
   - component: {fileID: 3751898693464454692}
   - component: {fileID: 3751898693464454693}
+  - component: {fileID: 8822121842849188894}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -88,6 +89,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3751898693464454694}
   m_Enabled: 1
+--- !u!114 &8822121842849188894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751898693464454694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f49f8d20735b2784182c9e7bed38de9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3751898692996858808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95,6 +108,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3751898693464454691}
     m_Modifications:
+    - target: {fileID: 9061351023498228435, guid: 8814e9a72a8a5a54789ee03406ef46cd, type: 3}
+      propertyPath: MainMenu
+      value: 
+      objectReference: {fileID: 8957916157015901669}
+    - target: {fileID: 9061351023498228435, guid: 8814e9a72a8a5a54789ee03406ef46cd, type: 3}
+      propertyPath: TwoObjectMenu
+      value: 
+      objectReference: {fileID: 9018227769736473801}
+    - target: {fileID: 9061351023498228435, guid: 8814e9a72a8a5a54789ee03406ef46cd, type: 3}
+      propertyPath: EmbeddedObjectMenu
+      value: 
+      objectReference: {fileID: 2216019073490463500}
     - target: {fileID: 9061351024171356425, guid: 8814e9a72a8a5a54789ee03406ef46cd, type: 3}
       propertyPath: m_Name
       value: OneObjectMenu
@@ -377,6 +402,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5206586349553043928, guid: ce31a1e63e3c578408cbdb37c3070762, type: 3}
   m_PrefabInstance: {fileID: 3751898693094837305}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8957916157015901669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5206586349553043932, guid: ce31a1e63e3c578408cbdb37c3070762, type: 3}
+  m_PrefabInstance: {fileID: 3751898693094837305}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3751898693277577890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -480,6 +510,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5275480549440077233, guid: f650a9ab82808214395013b04be6100b, type: 3}
+      propertyPath: MainMenu
+      value: 
+      objectReference: {fileID: 8957916157015901669}
+    - target: {fileID: 5275480549440077233, guid: f650a9ab82808214395013b04be6100b, type: 3}
+      propertyPath: OneObjectMenu
+      value: 
+      objectReference: {fileID: 5319042825945322161}
+    - target: {fileID: 5275480549440077233, guid: f650a9ab82808214395013b04be6100b, type: 3}
+      propertyPath: EmbeddedObjectMenu
+      value: 
+      objectReference: {fileID: 2216019073490463500}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f650a9ab82808214395013b04be6100b, type: 3}
 --- !u!1 &9018227769736473801 stripped
@@ -499,6 +541,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3751898693464454691}
     m_Modifications:
+    - target: {fileID: 3085399366836896771, guid: bfa6389f10ad6d146ac5718fe324a1a2, type: 3}
+      propertyPath: MainMenu
+      value: 
+      objectReference: {fileID: 8957916157015901669}
+    - target: {fileID: 3085399366836896771, guid: bfa6389f10ad6d146ac5718fe324a1a2, type: 3}
+      propertyPath: OneObjectMenu
+      value: 
+      objectReference: {fileID: 5319042825945322161}
+    - target: {fileID: 3085399366836896771, guid: bfa6389f10ad6d146ac5718fe324a1a2, type: 3}
+      propertyPath: TwoObjectMenu
+      value: 
+      objectReference: {fileID: 9018227769736473801}
     - target: {fileID: 3085399368856479705, guid: bfa6389f10ad6d146ac5718fe324a1a2, type: 3}
       propertyPath: m_Name
       value: EmbeddedObjectMenu
