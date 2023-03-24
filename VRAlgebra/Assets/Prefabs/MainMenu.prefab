@@ -613,7 +613,7 @@ RectTransform:
   m_GameObject: {fileID: 5206586349553043932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.004865311, y: 0.004865311, z: 0.004865311}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5206586351572560442}
@@ -634,9 +634,9 @@ Canvas:
   m_GameObject: {fileID: 5206586349553043932}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 3
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -668,7 +668,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &5206586349553043935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,7 +886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+  m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -915,6 +915,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdb71557a8e64194ca0cb1e46e586549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OneObjectMenu: {fileID: 0}
+  TwoObjectMenu: {fileID: 0}
+  EmbeddedObjectMenu: {fileID: 0}
+  MainMenu: {fileID: 5206586349553043932}
 --- !u!1 &5206586351657876027
 GameObject:
   m_ObjectHideFlags: 0

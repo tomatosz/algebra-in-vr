@@ -7,6 +7,7 @@ public class Rotate : MonoBehaviour
 
     public float rotationSpeed = 0.2f;
     static public Quaternion[] allRotations = GenerateRotationsCube();
+    static public bool MenuOn = false;
     //public Renderer = rendering;
 
     void Start()
