@@ -12,7 +12,6 @@ public class SettingsScripts : MonoBehaviour
     {
         LabelVisibility = !LabelVisibility;
         PlayerPrefs.SetInt("LabelVis", Labels.isOn ? 1 : 0);
-        Debug.Log(Labels.isOn);
     }
 
 }

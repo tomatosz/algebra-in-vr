@@ -9,7 +9,6 @@ public class OpenMenu : MonoBehaviour
     public GameObject EmbeddedObjectMenu;
     public GameObject MainMenu;
     public GameObject Settings;
-    static public bool Rotation;
 
     // Update is called once per frame
     void Update()
@@ -22,7 +21,7 @@ public class OpenMenu : MonoBehaviour
             TwoObjectMenu.SetActive(false);
             EmbeddedObjectMenu.SetActive(false);
             Settings.SetActive(false);
-            Rotation = false;
+            SetupScene.RotateToggle = false;
         }
     }
 }
