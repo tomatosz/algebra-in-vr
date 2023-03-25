@@ -10,6 +10,8 @@ public class MainMenuScripts : MonoBehaviour
     public GameObject EmbeddedObjectMenu;
     public GameObject MainMenu;
     public GameObject Settings;
+    public GameObject ConfirmExitMenu;
+    public bool Rotation;
 
     public void CallOneObjectMenu()
     {
@@ -34,5 +36,20 @@ public class MainMenuScripts : MonoBehaviour
     {
         Settings.SetActive(true);
         MainMenu.SetActive(false);
+    }
+
+
+    public void Exit()
+    {
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            ConfirmExitMenu.SetActive(true);
+            MainMenu.SetActive(false);
+        }
+        else
+        {
+            Rotation = true;
+            MainMenu.SetActive(false);
+        }
     }
 }

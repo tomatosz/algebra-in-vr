@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,16 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &7809855 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2216019073490463500, guid: c0573f8a500a61c40863961259288245, type: 3}
-  m_PrefabInstance: {fileID: 1647888098}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &126836754 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8957916157015901669, guid: c0573f8a500a61c40863961259288245, type: 3}
-  m_PrefabInstance: {fileID: 1647888098}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &266305270
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,11 +285,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &864463736 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9018227769736473801, guid: c0573f8a500a61c40863961259288245, type: 3}
-  m_PrefabInstance: {fileID: 1647888098}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1148793472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -368,10 +353,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1094656336303866779, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3751898693464454691, guid: c0573f8a500a61c40863961259288245, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -386,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3751898693464454691, guid: c0573f8a500a61c40863961259288245, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 3751898693464454691, guid: c0573f8a500a61c40863961259288245, type: 3}
       propertyPath: m_LocalRotation.w
@@ -420,18 +401,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 5319042825548951915, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: MainMenu
-      value: 
-      objectReference: {fileID: 126836754}
-    - target: {fileID: 5319042825548951915, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: TwoObjectMenu
-      value: 
-      objectReference: {fileID: 864463736}
-    - target: {fileID: 5319042825548951915, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: EmbeddedObjectMenu
-      value: 
-      objectReference: {fileID: 7809855}
     - target: {fileID: 8957916157015901669, guid: c0573f8a500a61c40863961259288245, type: 3}
       propertyPath: m_IsActive
       value: 1
