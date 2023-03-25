@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 5275480547961560680}
   m_Layer: 5
   m_Name: TwoObjectMenu
-  m_TagString: Untagged
+  m_TagString: Menu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1732,6 +1732,7 @@ MonoBehaviour:
   TwoObjectMenu: {fileID: 5275480547961560683}
   EmbeddedObjectMenu: {fileID: 0}
   MainMenu: {fileID: 0}
+  Settings: {fileID: 0}
 --- !u!114 &5275480549440077134
 MonoBehaviour:
   m_ObjectHideFlags: 0
