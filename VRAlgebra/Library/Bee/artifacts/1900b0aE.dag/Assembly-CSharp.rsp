@@ -354,6 +354,7 @@
 "Assets/Scripts/Dodecahedron.cs"
 "Assets/Scripts/EmbeddedObjectScripts.cs"
 "Assets/Scripts/FixedRotate.cs"
+"Assets/Scripts/LabelVisibility.cs"
 "Assets/Scripts/MainMenuScripts.cs"
 "Assets/Scripts/Octahedron.cs"
 "Assets/Scripts/OneObjectScripts.cs"

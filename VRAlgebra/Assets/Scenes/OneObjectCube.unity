@@ -440,6 +440,10 @@ PrefabInstance:
       propertyPath: EmbeddedObjectMenu
       value: 
       objectReference: {fileID: 959120075}
+    - target: {fileID: 3210441472823528721, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: m_IsOn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3751898693464454691, guid: c0573f8a500a61c40863961259288245, type: 3}
       propertyPath: m_RootOrder
       value: 1
