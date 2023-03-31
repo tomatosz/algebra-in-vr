@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7993783328879008511}
   - component: {fileID: 7993783328879008508}
   - component: {fileID: 7993783328879008510}
+  - component: {fileID: 7993783329549361743}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -46,6 +47,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SavePosition: {fileID: 7993783328879008510}
+  OneObjectMenu: {fileID: 0}
+  TwoObjectMenu: {fileID: 0}
+  EmbeddedObjectMenu: {fileID: 0}
+  MainMenu: {fileID: 0}
+  Settings: {fileID: 0}
 --- !u!114 &7993783328879008510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,3 +64,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606b9737dd0637941a43159baf4df174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7993783329549361743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7993783328879008509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f49f8d20735b2784182c9e7bed38de9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RunningTotal: {fileID: 0}
+  Labels: {fileID: 0}
+  RotationTracker: {fileID: 0}
+  FixedRotationObject: {fileID: 0}
+  RotationMode: {fileID: 0}

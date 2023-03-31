@@ -9,15 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Mainmenu.unity
     guid: 37bda7d44d8f0af429ee64a664aa879e
   - enabled: 1
-    path: Assets/Scenes/OneObjectMenu.unity
-    guid: 6ec40be54cfeb064e9b02362fdbe948e
-  - enabled: 1
-    path: Assets/Scenes/TwoObjectMenu.unity
-    guid: 797b8c0267116164ea7df4845e16ca12
-  - enabled: 1
-    path: Assets/Scenes/EmbeddedObjectMenu.unity
-    guid: c651734d6249c9249b881af5daf16897
-  - enabled: 1
     path: Assets/Scenes/OneObjectCube.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -30,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Cube with Octahedron.unity
     guid: 5a289e49c3b99e047992c1997037f39c
   - enabled: 1
-    path: Assets/Scenes/Dice.unity
-    guid: 444275522501be24bba298a2d4a6e01e
+    path: Assets/Scenes/Dodecahedron.unity
+    guid: eedfbce8ea0628940a71edcb2e8ca638
   m_configObjects: {}
