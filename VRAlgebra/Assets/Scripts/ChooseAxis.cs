@@ -13,10 +13,11 @@ public class ChooseAxis : MonoBehaviour
     private int axisIndex = 0;
     public string axisName = selectedAxis[0];
     private Vector3[] axisList = { new Vector3(0, 1, 0), new Vector3(0, 1, 1), new Vector3(1, 1, 1) };
+
     //public Renderer = rendering;
     public bool canChangeAxis = true;
     private Quaternion previousRotation;
-    private List<string> actions = new List<string>();
+    public static List<string> actions = new List<string>();
 
 
     void Start()
@@ -48,36 +49,6 @@ public class ChooseAxis : MonoBehaviour
             }
 
         }
-
-        /*if (Input.GetKeyDown("r"))
-		{
-			if (canChangeAxis == true)
-			{
-				axis = new Vector3(0, 1, 0);
-				axisName = "r";
-				
-			}
-		}
-
-		if (Input.GetKeyDown("t"))
-		{
-			if (canChangeAxis == true)
-			{
-				axis = new Vector3(0, 1, 1);
-				axisName = "t";
-				
-			}
-		}
-
-		if (Input.GetKeyDown("s"))
-		{
-			if (canChangeAxis == true)
-			{
-				axis = new Vector3(1, 1, 1);
-				axisName = "s";
-				Debug.Log("s");
-			}
-		}*/
     }
 
 
@@ -111,13 +82,10 @@ public class ChooseAxis : MonoBehaviour
         if (Quaternion.Angle(transform.rotation, closest) < 20)
         {
             StartCoroutine(PerformRotation(closest));
-            string test = AddRotations(previousRotation, closest);
-            Debug.Log(test);
-            previousRotation = transform.rotation;
+            AddRotations(previousRotation, closest);
+            previousRotation = closest;
             canChangeAxis = true;
-
         }
-
     }
 
     //Perform the rotation to a target rotation
@@ -130,7 +98,6 @@ public class ChooseAxis : MonoBehaviour
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, progress);
             progress += Time.deltaTime * speed;
-
             if (progress <= 1f)
             {
                 yield return null;
@@ -180,9 +147,9 @@ public class ChooseAxis : MonoBehaviour
     }
 
     //Add the rotation we did to the list of rotations
-    string AddRotations(Quaternion start, Quaternion end)
+    void AddRotations(Quaternion start, Quaternion end)
     {
-        string result = "";
+        //string result = "";
 
         if (axisIndex == 0)
         {
@@ -191,34 +158,32 @@ public class ChooseAxis : MonoBehaviour
             {
                 actions.Add("r");
             }
-
         }
 
-        if (axisIndex == 1)
+        else if (axisIndex == 1)
         {
             if (start != end)
                 actions.Add("t");
-
         }
 
-
-        if (axisIndex == 2)
+        else if (axisIndex == 2)
         {
             int amount = 0;
 
             for (int k = 0; k < 3; k++)
             {
-                if (end == start * (Quaternion.AngleAxis(120 * k, new Vector3(1, 1, 1))))
-                    break;
-                amount++;
+                if (Quaternion.Angle(end, (Quaternion.AngleAxis(120 * k, new Vector3(1, 1, 1))) * start) == 0)
+                {
+                    amount = k;
+                }
             }
-
             for (int j = 0; j < amount; j++)
                 actions.Add("s");
-        }
-        for (int k = actions.Count - 1; k >= 0; k--)
-            result += actions[k];
 
-        return result;
+        }
+        //for (int k = actions.Count - 1; k >= 0; k--)
+        //  result += actions[k];
+
+        //return result;
     }
 }
