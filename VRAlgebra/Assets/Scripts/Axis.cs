@@ -9,6 +9,7 @@ public class Axis : MonoBehaviour
 
     private GameObject tAxis;
     private GameObject sAxis;
+
     // Start is called before the first frame update
     void Start()
     {

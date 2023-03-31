@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Cube with Octahedron.unity
     guid: 5a289e49c3b99e047992c1997037f39c
   - enabled: 1
-    path: Assets/Scenes/Dodecahedron.unity
+    path: Assets/Scenes/Isocahedron.unity
     guid: eedfbce8ea0628940a71edcb2e8ca638
   m_configObjects: {}

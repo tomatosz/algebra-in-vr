@@ -47,7 +47,22 @@ public class ChooseAxis : MonoBehaviour
                 axisName = selectedAxis[axisIndex];
                 axis = axisList[axisIndex];
             }
+        }
 
+        if (Input.GetKeyDown("r"))
+        {
+            actions.Clear();
+        }
+
+        if (Input.GetKeyDown("p"))
+        {
+            string result = "";
+            if (actions.Count > 0)
+            {
+                for (int k = actions.Count - 1; k >= 0; k--)
+                    result += actions[k];
+            }
+            Debug.Log(result);
         }
     }
 
