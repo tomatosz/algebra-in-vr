@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -325,7 +325,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1015865730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3a8d4f021430b5448509912054086d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d8a798daaef14d4d8a6f69b9cab0ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 0.2
@@ -426,6 +426,7 @@ GameObject:
   - component: {fileID: 1325653581}
   - component: {fileID: 1325653580}
   - component: {fileID: 1325653583}
+  - component: {fileID: 1325653584}
   m_Layer: 0
   m_Name: Dodecahedron
   m_TagString: Untagged
@@ -523,3 +524,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b50b4f4031e132419bb903988c02f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kubus: {fileID: 1015865730}
+  groen: {fileID: 2100000, guid: 212ed3827d606884b9e2ff48dfdc815a, type: 2}
+  rood: {fileID: 2100000, guid: 66e5a84d5bc2fb946bff6a453023cb53, type: 2}
+  wit: {fileID: 2100000, guid: 5955f1aa8da9dcb44a3bd313e8584ec4, type: 2}
+--- !u!114 &1325653584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325653577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d8a798daaef14d4d8a6f69b9cab0ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0.2
