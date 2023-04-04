@@ -11,8 +11,10 @@ public class SetupScene : MonoBehaviour
     public static bool RotateToggle;
     public Toggle RunningTotal;
     public Toggle Labels;
-    public GameObject RotationTracker;
-    public GameObject FixedRotationObject;
+    public GameObject RotationTracker1;
+    public GameObject RotationTracker2;
+    public GameObject FixedRotationObject1;
+    public GameObject FixedRotationObject2;
     public TMP_Dropdown RotationMode;
 
     // Start is called before the first frame update
@@ -25,7 +27,8 @@ public class SetupScene : MonoBehaviour
         RunningTotal.isOn = PlayerPrefs.GetInt("RunningTotal") == 1;
         PlayerPrefs.SetInt("RotationMode", 0);
         RotationMode.value = 0;
-        RotationTracker.SetActive(FixedRotationObject.activeSelf && RunningTotal.isOn);
+        RotationTracker1.SetActive(FixedRotationObject1.activeSelf && RunningTotal.isOn);
+        RotationTracker2.SetActive(FixedRotationObject2.activeSelf && RunningTotal.isOn);
     }
 
 }
