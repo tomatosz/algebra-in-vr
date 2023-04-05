@@ -165,7 +165,7 @@ public class MenuScripts : MonoBehaviour
         SceneManager.LoadScene("Cube with Octahedron");
     }
 
-    public void CallDodecaInIso()
+    public void CallIsoInDodeca()
     {
         SaveCameraPositionScript();
         SceneManager.LoadScene("Isocahedron vs Dodecahedron");

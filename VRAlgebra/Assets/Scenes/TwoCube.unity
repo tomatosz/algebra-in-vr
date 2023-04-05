@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -559,6 +559,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1579870770}
+    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleRotationMode
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RotationModeScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0573f8a500a61c40863961259288245, type: 3}
 --- !u!114 &1579870766 stripped
@@ -883,11 +911,11 @@ PrefabInstance:
     - target: {fileID: 4206002395799786709, guid: e8f88e9d8fee51c4c83d2ee17e783c11, type: 3}
       propertyPath: RotationMode
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1579870766}
     - target: {fileID: 5187373808105983460, guid: e8f88e9d8fee51c4c83d2ee17e783c11, type: 3}
       propertyPath: RotationMode
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1579870766}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f88e9d8fee51c4c83d2ee17e783c11, type: 3}
 --- !u!1 &3035798021917306458 stripped

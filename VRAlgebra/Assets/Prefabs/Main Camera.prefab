@@ -7170,7 +7170,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dodecahedron inside an isocahedron
+  m_text: Isocahedron inside a dodecahedron
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7651,7 +7651,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4995934268919682081}
         m_TargetAssemblyTypeName: MenuScripts, Assembly-CSharp
-        m_MethodName: CallDodecaInIso
+        m_MethodName: CallIsoInDodeca
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
