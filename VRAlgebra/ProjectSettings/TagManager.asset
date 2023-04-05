@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Menu
+  - FreeRotation
+  - FixedRotation
+  - RotationTracker
   layers:
   - Default
   - TransparentFX

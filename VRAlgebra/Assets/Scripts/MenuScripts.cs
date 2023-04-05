@@ -14,6 +14,7 @@ public class MenuScripts : MonoBehaviour
     public GameObject MainMenu;
     public GameObject Settings;
     public GameObject ConfirmExitMenu;
+    public TMP_Dropdown RotationMode;
 
 
     void Update()
@@ -165,7 +166,7 @@ public class MenuScripts : MonoBehaviour
         SceneManager.LoadScene("Cube with Octahedron");
     }
 
-    public void CallDodecaInIso()
+    public void CallIsoInDodeca()
     {
         SaveCameraPositionScript();
         SceneManager.LoadScene("Isocahedron vs Dodecahedron");
@@ -179,6 +180,35 @@ public class MenuScripts : MonoBehaviour
     public void ToggleRunningTotal()
     {
         PlayerPrefs.SetInt("RunningTotal", RunningTotal.isOn ? 1 : 0);
+    }
+
+    public void ToggleRotationMode()
+    {
+
+        if (RotationMode.value == 0)
+        {
+
+            foreach (GameObject freerot in SetupScene.freerotation)
+                freerot.SetActive(true);
+
+            foreach (GameObject fixedrot in SetupScene.fixedrotation)
+                fixedrot.SetActive(false);
+
+            foreach (GameObject trackrot in SetupScene.rotationtracker)
+                trackrot.SetActive(false);
+
+        }
+        else if (RotationMode.value == 1)
+        {
+            foreach (GameObject freerot in SetupScene.freerotation)
+                freerot.SetActive(false);
+            foreach (GameObject fixedrot in SetupScene.fixedrotation)
+                fixedrot.SetActive(true);
+            foreach (GameObject trackrot in SetupScene.rotationtracker)
+                trackrot.SetActive(RunningTotal.isOn);
+
+        }
+
     }
 
     public void ConfirmExit()

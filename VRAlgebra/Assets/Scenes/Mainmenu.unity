@@ -348,6 +348,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8957916156552059629, guid: c0573f8a500a61c40863961259288245, type: 3}
+      propertyPath: m_text
+      value: Welcome to Algebra in VR
+      objectReference: {fileID: 0}
     - target: {fileID: 8957916157015901669, guid: c0573f8a500a61c40863961259288245, type: 3}
       propertyPath: m_IsActive
       value: 1

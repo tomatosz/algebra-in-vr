@@ -178,17 +178,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Axis1
       objectReference: {fileID: 0}
+    - target: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
+      propertyPath: m_TagString
+      value: FixedRotation
+      objectReference: {fileID: 0}
     - target: {fileID: 3519908210082244855, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 2117902822}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
---- !u!1 &78910929 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
-  m_PrefabInstance: {fileID: 78910928}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &193525372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -244,13 +243,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: FreeRotationCube2
       objectReference: {fileID: 0}
+    - target: {fileID: 5489731922635783541, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
+      propertyPath: m_TagString
+      value: FreeRotation
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
---- !u!1 &193525373 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5489731922635783541, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
-  m_PrefabInstance: {fileID: 193525372}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &553623226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -305,6 +303,10 @@ PrefabInstance:
     - target: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
       propertyPath: m_Name
       value: Axis2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
+      propertyPath: m_TagString
+      value: FixedRotation
       objectReference: {fileID: 0}
     - target: {fileID: 3519908210082244855, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
       propertyPath: target
@@ -435,6 +437,10 @@ PrefabInstance:
     - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
       propertyPath: m_Name
       value: FixedRotationCube2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
+      propertyPath: m_TagString
+      value: FixedRotation
       objectReference: {fileID: 0}
     - target: {fileID: 5137383397820166236, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
       propertyPath: m_RootOrder
@@ -594,33 +600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1579870769 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1094656335370592380, guid: c0573f8a500a61c40863961259288245, type: 3}
-  m_PrefabInstance: {fileID: 1579870765}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1579870770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579870769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52fa38f3ab0d6964e96bf5a50f820aab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RunningTotal: {fileID: 1579870767}
-  FreeRotationObject1: {fileID: 5489731923428121189}
-  FixedRotationObject1: {fileID: 2117902822}
-  FixedRotationAxis1: {fileID: 78910929}
-  RotationTracker1: {fileID: 3035798021917306459}
-  FreeRotationObject2: {fileID: 193525373}
-  FixedRotationObject2: {fileID: 1449258896}
-  FixedRotationAxis2: {fileID: 553623227}
-  RotationTracker2: {fileID: 3035798021917306458}
-  RotationMode: {fileID: 1579870766}
 --- !u!1001 &2117692225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -716,6 +695,10 @@ PrefabInstance:
     - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
       propertyPath: m_Name
       value: FixedRotationCube1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
+      propertyPath: m_TagString
+      value: FixedRotation
       objectReference: {fileID: 0}
     - target: {fileID: 5137383397820166236, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
       propertyPath: m_RootOrder
@@ -883,11 +866,11 @@ PrefabInstance:
     - target: {fileID: 4206002395799786709, guid: e8f88e9d8fee51c4c83d2ee17e783c11, type: 3}
       propertyPath: RotationMode
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1579870766}
     - target: {fileID: 5187373808105983460, guid: e8f88e9d8fee51c4c83d2ee17e783c11, type: 3}
       propertyPath: RotationMode
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1579870766}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f88e9d8fee51c4c83d2ee17e783c11, type: 3}
 --- !u!1 &3035798021917306458 stripped
@@ -955,10 +938,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: FreeRotationCube1
       objectReference: {fileID: 0}
+    - target: {fileID: 5489731922635783541, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
+      propertyPath: m_TagString
+      value: FreeRotation
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
---- !u!1 &5489731923428121189 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5489731922635783541, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
-  m_PrefabInstance: {fileID: 5489731923428121188}
-  m_PrefabAsset: {fileID: 0}

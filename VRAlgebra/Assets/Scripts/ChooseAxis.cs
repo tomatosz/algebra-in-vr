@@ -62,7 +62,6 @@ public class ChooseAxis : MonoBehaviour
                 for (int k = actions.Count - 1; k >= 0; k--)
                     result += actions[k];
             }
-            Debug.Log(result);
         }
     }
 

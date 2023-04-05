@@ -9,7 +9,7 @@ public class DodecahedronRotate : MonoBehaviour
 
 
     public float rotationSpeed = 0.2f;
-
+    public int goodrotation = 0; //0wit 1groen 2rood
 
 
     //vertices
@@ -60,7 +60,7 @@ public class DodecahedronRotate : MonoBehaviour
         //select the axis by which you want to rotate the GameObject
         transform.RotateAround(Vector3.down, XaxisRotation);
         transform.RotateAround(Vector3.right, YaxisRotation);
-        this.GetComponent<Renderer>().material.color = Color.white;
+        goodrotation = 0;
 
     }
 
@@ -70,13 +70,13 @@ public class DodecahedronRotate : MonoBehaviour
         Quaternion closest = ClosestRotation(CalcAllRotations);
         if (Quaternion.Angle(transform.rotation, closest) < 30)
         {
-            this.GetComponent<Renderer>().material.color = Color.green;
+            goodrotation = 1;
             StartCoroutine(PerformRotation(closest));
         }
 
         else
         {
-            this.GetComponent<Renderer>().material.color = Color.red;
+            goodrotation = 2;
         }
     }
     IEnumerator PerformRotation(Quaternion targetRotation)
@@ -156,4 +156,3 @@ public class DodecahedronRotate : MonoBehaviour
         return closest;
     }
 }
-
