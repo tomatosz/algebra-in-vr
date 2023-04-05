@@ -78,6 +78,11 @@ public class MenuScripts : MonoBehaviour
         {
             SetupScene.RotateToggle = true;
             MainMenu.SetActive(false);
+            OneObjectMenu.SetActive(false);
+            TwoObjectMenu.SetActive(false);
+            EmbeddedObjectMenu.SetActive(false);
+            Settings.SetActive(false);
+            ConfirmExitMenu.SetActive(false);
         }
     }
     public void Exit()

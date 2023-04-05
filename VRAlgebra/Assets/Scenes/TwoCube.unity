@@ -179,6 +179,10 @@ PrefabInstance:
       value: Axis1
       objectReference: {fileID: 0}
     - target: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
       propertyPath: m_TagString
       value: FixedRotation
       objectReference: {fileID: 0}
@@ -303,6 +307,10 @@ PrefabInstance:
     - target: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
       propertyPath: m_Name
       value: Axis2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
       propertyPath: m_TagString
@@ -437,6 +445,10 @@ PrefabInstance:
     - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
       propertyPath: m_Name
       value: FixedRotationCube2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
       propertyPath: m_TagString
@@ -695,6 +707,10 @@ PrefabInstance:
     - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
       propertyPath: m_Name
       value: FixedRotationCube1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
       propertyPath: m_TagString
