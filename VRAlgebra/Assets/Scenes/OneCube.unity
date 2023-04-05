@@ -128,11 +128,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8957916157015901669, guid: c0573f8a500a61c40863961259288245, type: 3}
   m_PrefabInstance: {fileID: 3751898692510702423}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &537484786 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
-  m_PrefabInstance: {fileID: 3519908209544901892}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,11 +370,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
---- !u!1 &1134167261 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5489731922635783541, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
-  m_PrefabInstance: {fileID: 1125233269}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1151723871 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6656793426950410041, guid: c0573f8a500a61c40863961259288245, type: 3}
@@ -655,82 +645,6 @@ PrefabInstance:
     - target: {fileID: 3751898693464454694, guid: c0573f8a500a61c40863961259288245, type: 3}
       propertyPath: m_Name
       value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 4281545232235857877, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: RotationTracker
-      value: 
-      objectReference: {fileID: 326423220002279701}
-    - target: {fileID: 4281545232235857877, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: FixedRotationAxis
-      value: 
-      objectReference: {fileID: 537484786}
-    - target: {fileID: 4281545232235857877, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: FreeRotationObject
-      value: 
-      objectReference: {fileID: 1134167261}
-    - target: {fileID: 4281545232235857877, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: FixedRotationObject
-      value: 
-      objectReference: {fileID: 1106933872}
-    - target: {fileID: 4995934268919682081, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: RotationTracker1
-      value: 
-      objectReference: {fileID: 326423220002279701}
-    - target: {fileID: 4995934268919682081, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: RotationTracker2
-      value: 
-      objectReference: {fileID: 326423220002279701}
-    - target: {fileID: 4995934268919682081, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: FixedRotationAxis1
-      value: 
-      objectReference: {fileID: 537484786}
-    - target: {fileID: 4995934268919682081, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: FixedRotationAxis2
-      value: 
-      objectReference: {fileID: 537484786}
-    - target: {fileID: 4995934268919682081, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: FreeRotationObject1
-      value: 
-      objectReference: {fileID: 1134167261}
-    - target: {fileID: 4995934268919682081, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: FreeRotationObject2
-      value: 
-      objectReference: {fileID: 1134167261}
-    - target: {fileID: 4995934268919682081, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: FixedRotationObject1
-      value: 
-      objectReference: {fileID: 1106933872}
-    - target: {fileID: 4995934268919682081, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: FixedRotationObject2
-      value: 
-      objectReference: {fileID: 1106933872}
-    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToggleRotationMode
-      objectReference: {fileID: 0}
-    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: RotationModeScript, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0573f8a500a61c40863961259288245, type: 3}
