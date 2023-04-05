@@ -2675,7 +2675,7 @@ GameObject:
   - component: {fileID: 8599129687409526596}
   m_Layer: 0
   m_Name: Pedestal2Text
-  m_TagString: Untagged
+  m_TagString: RotationTracker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4371,7 +4371,7 @@ GameObject:
   - component: {fileID: 3611147271792472714}
   m_Layer: 0
   m_Name: Pedestal1Text
-  m_TagString: Untagged
+  m_TagString: RotationTracker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

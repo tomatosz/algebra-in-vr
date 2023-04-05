@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -369,6 +369,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5489731922635783541, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
+      propertyPath: m_TagString
+      value: FreeRotation
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b07d134c2e413d3449870da7f39f6cc8, type: 3}
 --- !u!1 &1134167261 stripped
@@ -474,6 +478,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FixedRotationCube
       objectReference: {fileID: 0}
+    - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137383397820166235, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
+      propertyPath: m_TagString
+      value: FixedRotation
+      objectReference: {fileID: 0}
     - target: {fileID: 5137383397820166236, guid: 6991716d34656cb499df4244d7b13f55, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -574,6 +586,14 @@ PrefabInstance:
     - target: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
       propertyPath: m_Name
       value: Axis
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519908210082244854, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
+      propertyPath: m_TagString
+      value: FixedRotation
       objectReference: {fileID: 0}
     - target: {fileID: 3519908210082244855, guid: a878ca87c76a7f647a63ebe47c4c81d0, type: 3}
       propertyPath: target
@@ -695,7 +715,7 @@ PrefabInstance:
     - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3751898692510702427}
+      objectReference: {fileID: 0}
     - target: {fileID: 5824208956110273210, guid: c0573f8a500a61c40863961259288245, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -736,33 +756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &3751898692510702426 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1094656335370592380, guid: c0573f8a500a61c40863961259288245, type: 3}
-  m_PrefabInstance: {fileID: 3751898692510702423}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3751898692510702427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3751898692510702426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52fa38f3ab0d6964e96bf5a50f820aab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RunningTotal: {fileID: 1151723871}
-  FreeRotationObject1: {fileID: 1134167261}
-  FixedRotationObject1: {fileID: 1106933872}
-  FixedRotationAxis1: {fileID: 537484786}
-  RotationTracker1: {fileID: 326423220002279701}
-  FreeRotationObject2: {fileID: 1134167261}
-  FixedRotationObject2: {fileID: 1106933872}
-  FixedRotationAxis2: {fileID: 537484786}
-  RotationTracker2: {fileID: 326423220002279701}
-  RotationMode: {fileID: 3751898692510702424}
 --- !u!1001 &7993783329549361741
 PrefabInstance:
   m_ObjectHideFlags: 0

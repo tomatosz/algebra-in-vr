@@ -2504,7 +2504,7 @@ GameObject:
   - component: {fileID: 6883783901801473182}
   m_Layer: 0
   m_Name: TextOnPedestal
-  m_TagString: Untagged
+  m_TagString: RotationTracker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
