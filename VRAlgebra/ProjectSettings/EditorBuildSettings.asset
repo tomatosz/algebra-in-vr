@@ -47,4 +47,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Isocahedron vs Dodecahedron.unity
     guid: a55b97c6e7039044f850d6133afb0ae6
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 88453bf1c23ece64baf5dbc7302c23c2, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a3d6e690b87a4064d9748024ca4aba62, type: 2}
