@@ -7,10 +7,10 @@ public class LabelVisibility : MonoBehaviour
     public GameObject Labels;
     public bool LabelVisib;
 
-    // Update is called once per frame
+    // Enabling labels precisely when the label setting is on
     void Update()
     {
-        LabelVisib = PlayerPrefs.GetInt("LabelVis") == 1;
+        LabelVisib = PlayerPrefs.GetInt("LabelVis") == 1; // Playerprefs store integers, not boolean, so have to convert
         Labels.SetActive(LabelVisib);
     }
 }

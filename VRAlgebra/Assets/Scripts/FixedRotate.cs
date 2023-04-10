@@ -16,10 +16,6 @@ public class FixedRotate : MonoBehaviour
 
 	//public Renderer = rendering;
 
-	void Start()
-	{
-		
-	}
 
 	void Update()
 	{

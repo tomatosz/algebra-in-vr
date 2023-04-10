@@ -42,16 +42,7 @@ public class DodecahedronRotate : MonoBehaviour
 
     static public Quaternion[] CalcAllRotations = GenerateRotationsDodecahedron();
 
-    void Start()
-    {
 
-    }
-
-    void Update()
-    {
-
-
-    }
     //Rotate the object with the mouse
     void OnMouseDrag()
     {

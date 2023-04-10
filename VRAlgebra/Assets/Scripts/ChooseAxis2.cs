@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChooseAxis2 : MonoBehaviour
 {
+    // Identical to ChooseAxis.cs, except the static variables have a 2 so it can generate a second list for a second object in the same scene
 
     public float rotationSpeed = 0.2f;
     static public Quaternion[] allRotations2 = GenerateRotationsCube();
@@ -19,11 +20,6 @@ public class ChooseAxis2 : MonoBehaviour
     private Quaternion previousRotation;
     public static List<string> actions2 = new List<string>();
 
-
-    void Start()
-    {
-
-    }
 
     void Update()
     {

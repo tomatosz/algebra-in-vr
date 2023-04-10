@@ -15,17 +15,32 @@ public class MenuScripts : MonoBehaviour
     public GameObject Settings;
     public GameObject ConfirmExitMenu;
     public TMP_Dropdown RotationMode;
+    public GameObject Player;
 
-
+    // function to open menu when pressing the correct button
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            SaveCameraPositionScript();
+            SavePlayerPositionScript();
             CallMainMenu();
-            SetupScene.RotateToggle = false;
+            SetupScene.RotateToggle = false;  // make object in the room non-interactible while the menu is open
         }
     }
+
+    // function to save player position before scene switch so the position can be used in the new scene
+    public void SavePlayerPositionScript()
+    {
+        PlayerPrefs.SetFloat("PlayerPosx", Player.transform.position.x);
+        PlayerPrefs.SetFloat("PlayerPosy", Player.transform.position.y);
+        PlayerPrefs.SetFloat("PlayerPosz", Player.transform.position.z);
+        PlayerPrefs.SetFloat("PlayerRotx", Player.transform.rotation.eulerAngles.x);
+        PlayerPrefs.SetFloat("PlayerRoty", Player.transform.rotation.eulerAngles.y);
+        PlayerPrefs.SetFloat("PlayerRotz", Player.transform.rotation.eulerAngles.z);
+    }
+
+    // functions to open and close different menus
+
 
     public void CallMainMenu()
     {
@@ -35,16 +50,6 @@ public class MenuScripts : MonoBehaviour
         EmbeddedObjectMenu.SetActive(false);
         Settings.SetActive(false);
         ConfirmExitMenu.SetActive(false);
-    }
-
-    public void SaveCameraPositionScript()
-    {
-        PlayerPrefs.SetFloat("CamPosx", Camera.main.transform.position.x);
-        PlayerPrefs.SetFloat("CamPosy", Camera.main.transform.position.y);
-        PlayerPrefs.SetFloat("CamPosz", Camera.main.transform.position.z);
-        PlayerPrefs.SetFloat("CamRotx", Camera.main.transform.rotation.eulerAngles.x);
-        PlayerPrefs.SetFloat("CamRoty", Camera.main.transform.rotation.eulerAngles.y);
-        PlayerPrefs.SetFloat("CamRotz", Camera.main.transform.rotation.eulerAngles.z);
     }
 
 
@@ -76,7 +81,7 @@ public class MenuScripts : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().buildIndex != 0)
         {
-            SetupScene.RotateToggle = true;
+            SetupScene.RotateToggle = true; // make the object interactible again when the menu is closed
             MainMenu.SetActive(false);
             OneObjectMenu.SetActive(false);
             TwoObjectMenu.SetActive(false);
@@ -91,105 +96,133 @@ public class MenuScripts : MonoBehaviour
         MainMenu.SetActive(false);
     }
 
+    // functions to either close the program or go back to main menu.
+
+    public void ConfirmExit()
+    {
+        Debug.Log("EXIT");
+        Application.Quit();
+    }
+
+    public void CancelExit()
+    {
+        MainMenu.SetActive(true);
+        ConfirmExitMenu.SetActive(false);
+    }
+
+
+    // functions to load scenes with one object
+
     public void CallOneTetra()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("OneTetraeder");
 
     }
 
     public void CallOneCube()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("OneCube");
 
     }
 
     public void CallOneOcta()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("OneOctahedron");
 
     }
 
     public void CallOneDodeca()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("OneDodecahedron");
     }
 
     public void CallOneIsoca()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("OneIsocahedron");
 
     }
 
+    // functions to load scenes with two objects
+
     public void CallTwoTetra()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("TwoTetraeder");
 
     }
 
     public void CallTwoCube()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("TwoCube");
 
     }
 
     public void CallTwoOcta()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("TwoOctahedron");
 
     }
 
     public void CallTwoDodeca()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("TwoDodecahedron");
     }
 
     public void CallTwoIsoca()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("TwoIsocahedron");
 
     }
 
+    // functions to load scenes with two different objects inside each other
+
+
     public void CallTetraInCube()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("Cube with Tetraeder");
     }
 
     public void CallOctaInCube()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("Cube with Octahedron");
     }
 
     public void CallIsoInDodeca()
     {
-        SaveCameraPositionScript();
+        SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("Isocahedron vs Dodecahedron");
     }
 
+
+    // functions to change different settings
+
+
     public void ToggleLabels()
     {
-        PlayerPrefs.SetInt("LabelVis", Labels.isOn ? 1 : 0);
+        // Save the label toggle, this is referenced in LabelVisiblity.cs
+        PlayerPrefs.SetInt("LabelVis", Labels.isOn ? 1 : 0); 
     }
 
     public void ToggleRunningTotal()
     {
+        // Save the runningtotal toggle, this is referenced in RunningTotalVisibility.cs
         PlayerPrefs.SetInt("RunningTotal", RunningTotal.isOn ? 1 : 0);
     }
 
     public void ToggleRotationMode()
     {
-
+        // enable objects with freerotation tag or fixedrotation tag depending on dropdown option chosen. also adjust running total tracker
         if (RotationMode.value == 0)
         {
 
@@ -214,18 +247,6 @@ public class MenuScripts : MonoBehaviour
 
         }
 
-    }
-
-    public void ConfirmExit()
-    {
-        Debug.Log("EXIT");
-        Application.Quit();
-    }
-
-    public void CancelExit()
-    {
-        MainMenu.SetActive(true);
-        ConfirmExitMenu.SetActive(false);
     }
 
 }

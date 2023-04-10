@@ -20,11 +20,6 @@ public class ChooseAxis : MonoBehaviour
     public static List<string> actions = new List<string>();
 
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         //Change the axis depending on which button you press
