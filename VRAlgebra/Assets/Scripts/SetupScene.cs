@@ -16,26 +16,37 @@ public class SetupScene : MonoBehaviour
     public static GameObject[] fixedrotation;
     public static GameObject[] rotationtracker;
 
-    // Start is called before the first frame update
+    // Setup at the start of the scene
     void Start()
     {
-        transform.position = new Vector3 (PlayerPrefs.GetFloat("CamPosx"), PlayerPrefs.GetFloat("CamPosy"), PlayerPrefs.GetFloat("CamPosz"));
-        transform.eulerAngles = new Vector3 (PlayerPrefs.GetFloat("CamRotx"), PlayerPrefs.GetFloat("CamRoty"), PlayerPrefs.GetFloat("CamRotz"));
-        RotateToggle = true;
-        Labels.isOn = PlayerPrefs.GetInt("LabelVis") == 1;
+        transform.position = new Vector3 (PlayerPrefs.GetFloat("PlayerPosx"), PlayerPrefs.GetFloat("PlayerPosy"), PlayerPrefs.GetFloat("PlayerPosz"));   // set player position and rotation to match previous scene
+        transform.eulerAngles = new Vector3 (PlayerPrefs.GetFloat("PlayerRotx"), PlayerPrefs.GetFloat("PlayerRoty"), PlayerPrefs.GetFloat("PlayerRotz"));
+       
+        
+        RotateToggle = true;                                            // Start scene with interactive object
+        
+        Labels.isOn = PlayerPrefs.GetInt("LabelVis") == 1;              // Set settings toggles to match previously selected settings
         RunningTotal.isOn = PlayerPrefs.GetInt("RunningTotal") == 1;
-        PlayerPrefs.SetInt("RotationMode", 0);
+        
+       
+        PlayerPrefs.SetInt("RotationMode", 0);                          // Set object to free rotation mode
         RotationMode.value = 0;
-        freerotation = GameObject.FindGameObjectsWithTag("FreeRotation");
+        
+        
+        
+        freerotation = GameObject.FindGameObjectsWithTag("FreeRotation");           // Create lists of objects for free rotation, fixed rotation, and the text on pedestals
         fixedrotation = GameObject.FindGameObjectsWithTag("FixedRotation");
         rotationtracker = GameObject.FindGameObjectsWithTag("RotationTracker");
-        foreach (GameObject freerot in SetupScene.freerotation)
+        
+        
+        
+        foreach (GameObject freerot in SetupScene.freerotation)         // Enable free rotation objects
             freerot.SetActive(true);
 
-        foreach (GameObject fixedrot in SetupScene.fixedrotation)
+        foreach (GameObject fixedrot in SetupScene.fixedrotation)       // Disable fixed rotation objects
             fixedrot.SetActive(false);
 
-        foreach (GameObject trackrot in SetupScene.rotationtracker)
+        foreach (GameObject trackrot in SetupScene.rotationtracker)     // Disable text on pedestals
             trackrot.SetActive(false);
     }
 

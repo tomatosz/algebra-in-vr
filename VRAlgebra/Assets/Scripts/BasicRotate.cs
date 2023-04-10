@@ -8,17 +8,6 @@ public class BasicRotate : MonoBehaviour
     public float rotationSpeed = 0.2f;
 
 
-
-
-    void start()
-    {
-
-    }
-
-    void update()
-    {
-    }
-
     //Rotate the object with the mouse
     void OnMouseDrag()
     {

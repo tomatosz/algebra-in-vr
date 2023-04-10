@@ -5,14 +5,7 @@ using UnityEngine;
 public class RotateView : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-   
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
+    // Script to always make labels face the player (camera)
     void Update()
     {
         transform.rotation = Camera.main.transform.rotation;

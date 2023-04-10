@@ -16,7 +16,7 @@ public class Axis : MonoBehaviour
         //GameObject rAxis = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
         tAxis = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
         sAxis = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-        tAxis.tag = "FixedRotation";
+        tAxis.tag = "FixedRotation";        // Give the axes tags so they can be enabled and disabled
         sAxis.tag = "FixedRotation";
 
         this.transform.localScale = new Vector3(0.007f, 2 * target.transform.localScale.y, 0.007f);

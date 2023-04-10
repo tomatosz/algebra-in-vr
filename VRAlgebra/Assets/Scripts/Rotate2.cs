@@ -14,16 +14,6 @@ public class Rotate2 : MonoBehaviour
     private int[] teraederrotationsindex = { 0, 2, 5, 8, 16, 17, 18, 19, 20, 21, 22, 23 };
 
 
-
-    void start()
-    {
-
-    }
-
-    void update()
-    {
-    }
-
     //Rotate the object with the mouse
     void OnMouseDrag()
     {

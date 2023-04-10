@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Axis2 : MonoBehaviour
 {
+    // Identical to Axis.cs, except the static variables have a 2 so it interacts with ChooseAxis2.cs to work with the second object in the room
 
     public GameObject target;
 
@@ -16,7 +17,7 @@ public class Axis2 : MonoBehaviour
         //GameObject rAxis = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
         tAxis = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
         sAxis = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-        tAxis.tag = "FixedRotation";
+        tAxis.tag = "FixedRotation";        // Give the axes tags so they can be enabled and disabled
         sAxis.tag = "FixedRotation";
 
         this.transform.localScale = new Vector3(0.007f, 2 * target.transform.localScale.y, 0.007f);

@@ -10,13 +10,6 @@ public class Rotate : MonoBehaviour
     static public bool MenuOn = false;
     //public Renderer = rendering;
 
-    void Start()
-    {
-    }
-
-    void Update()
-    {
-    }
 
     //Rotate the object with the mouse
     void OnMouseDrag()
