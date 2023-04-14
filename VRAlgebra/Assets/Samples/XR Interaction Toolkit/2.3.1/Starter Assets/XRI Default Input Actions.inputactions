@@ -2104,6 +2104,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Velocities",
+            "id": "0d7c6d21-f0e6-43c1-8c4c-e130811fa9e6",
+            "actions": [
+                {
+                    "name": "VelocityRight",
+                    "type": "Value",
+                    "id": "8f157efa-c661-4e53-92dd-7ddaa319402b",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4e23c69e-c0f6-423f-a00b-0a6d02d25a05",
+                    "path": "<XRController>{RightHand}/deviceVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "VelocityRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

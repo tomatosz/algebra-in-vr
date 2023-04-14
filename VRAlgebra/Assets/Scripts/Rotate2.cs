@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+using UnityEngine.InputSystem;
 
 public class Rotate2 : MonoBehaviour
 {
-
     public float rotationSpeed = 0.2f;
     static public Quaternion[] allRotations = GenerateRotations();
     public Material Redtransp;
@@ -13,18 +13,22 @@ public class Rotate2 : MonoBehaviour
     public Material Transparant;
     public bool Tetraok=true;
     private int[] teraederrotationsindex = { 0, 2, 5, 8, 16, 17, 18, 19, 20, 21, 22, 23 };
+    public InputActionProperty rightHandVelocity;
+    public Vector3 velocity { get; private set; } = Vector3.zero;
 
     private bool isTriggerPressed =true;
-
+    
+    
 
     //Rotate the object with the mouse
     public void OnTriggerDrag()
     {
+        velocity = rightHandVelocity.action.ReadValue<Vector3>();
         isTriggerPressed = true;
         if (isTriggerPressed == true)
         {
-            float XaxisRotation = Input.GetAxis("Vertical") * rotationSpeed;
-            float YaxisRotation = Input.GetAxis("Horizontal") * rotationSpeed;
+            float XaxisRotation = velocity.x * rotationSpeed;
+            float YaxisRotation = velocity.y * rotationSpeed;
             //select the axis by which you want to rotate the GameObject
             transform.RotateAround(Vector3.down, XaxisRotation);
             transform.RotateAround(Vector3.right, YaxisRotation);

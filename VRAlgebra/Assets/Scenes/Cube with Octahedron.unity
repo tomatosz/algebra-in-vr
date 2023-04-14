@@ -322,6 +322,18 @@ MonoBehaviour:
   Greentransp: {fileID: 2100000, guid: 6350172febdd4634294249f40c8f04bf, type: 2}
   Transparant: {fileID: 2100000, guid: 5297a0f10bca8684eb7ebfd01f1c3489, type: 2}
   Tetraok: 1
+  rightHandVelocity:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Hand Velocity
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 2bc1c3e3-02aa-4bcb-b9b1-852476e49490
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 4551021459962518508, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!65 &1015865732
 BoxCollider:
   m_ObjectHideFlags: 0
