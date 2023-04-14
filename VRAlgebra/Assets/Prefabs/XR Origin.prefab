@@ -3712,7 +3712,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 7573457224637347965}
   m_Template: {fileID: 5756311762015268569}
   m_CaptionText: {fileID: 3777869468654061680}
@@ -3732,7 +3732,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3204326295481469396}
         m_TargetAssemblyTypeName: MenuScripts, Assembly-CSharp
-        m_MethodName: ToggleRunningTotal
+        m_MethodName: ToggleRotationMode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5777,6 +5777,18 @@ MonoBehaviour:
   ConfirmExitMenu: {fileID: 4261665795456115638}
   RotationMode: {fileID: 4720646867300298033}
   Player: {fileID: 4671177248340916307}
+  MenuButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Menu Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: cdc86deb-f96b-41b8-bd60-0cb456e76680
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6271864369342238170, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &2834868286530305141
 GameObject:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -522,6 +522,42 @@ MonoBehaviour:
   axis: {x: 0, y: 1, z: 0}
   axisName: r
   canChangeAxis: 1
+  ToggleAxis1:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Toggle Axis 1
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ed7703b7-dc1d-482f-a124-a2b1765f85d2
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 730792118621687916, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  ToggleAxis2:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Toggle Axis 2
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: adac9a9d-8530-4f38-90bb-9ed558496d1b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 3636914267927973302, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  ResetButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Reset Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a2dde668-eedd-4c89-b09d-6aed89d6b63c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8528923963074600148, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1001 &1661585063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -532,6 +568,10 @@ PrefabInstance:
     - target: {fileID: 4671177248340916307, guid: fd6c0f809cbc7c24c889d47d952f5314, type: 3}
       propertyPath: m_Name
       value: XR Origin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720646867300298033, guid: fd6c0f809cbc7c24c889d47d952f5314, type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6432542169110072219, guid: fd6c0f809cbc7c24c889d47d952f5314, type: 3}
       propertyPath: m_RootOrder

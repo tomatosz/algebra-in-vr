@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class MenuScripts : MonoBehaviour
 
@@ -16,11 +17,12 @@ public class MenuScripts : MonoBehaviour
     public GameObject ConfirmExitMenu;
     public TMP_Dropdown RotationMode;
     public GameObject Player;
+    public InputActionProperty MenuButton;
 
     // function to open menu when pressing the correct button
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (MenuButton.action.WasPressedThisFrame())
         {
             SavePlayerPositionScript();
             CallMainMenu();

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Rotate2 : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Rotate2 : MonoBehaviour
     public Material Transparant;
     public bool Tetraok=true;
     private int[] teraederrotationsindex = { 0, 2, 5, 8, 16, 17, 18, 19, 20, 21, 22, 23 };
+    public InputActionProperty rightHandVelocity;
 
 
     //Rotate the object with the mouse
