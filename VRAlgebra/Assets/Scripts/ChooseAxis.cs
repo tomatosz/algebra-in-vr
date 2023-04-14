@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ChooseAxis : MonoBehaviour
 {
@@ -19,11 +20,16 @@ public class ChooseAxis : MonoBehaviour
     private Quaternion previousRotation;
     public static List<string> actions = new List<string>();
 
+    public InputActionProperty ToggleAxis1;
+    public InputActionProperty ToggleAxis2;
+    public InputActionProperty ResetButton;
+
+
 
     void Update()
     {
         //Change the axis depending on which button you press
-        if (Input.GetKeyDown("w"))
+        if (ToggleAxis1.action.WasPressedThisFrame())
         {
             if (canChangeAxis == true)
             {
@@ -34,7 +40,7 @@ public class ChooseAxis : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown("q"))
+        if (ToggleAxis2.action.WasPressedThisFrame())
         {
             if (canChangeAxis == true)
             {
@@ -44,7 +50,7 @@ public class ChooseAxis : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("r"))
+        if (ResetButton.action.WasPressedThisFrame())
         {
             actions.Clear();
         }
