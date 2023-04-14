@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class Rotate2 : MonoBehaviour
 {
@@ -13,21 +14,28 @@ public class Rotate2 : MonoBehaviour
     public bool Tetraok=true;
     private int[] teraederrotationsindex = { 0, 2, 5, 8, 16, 17, 18, 19, 20, 21, 22, 23 };
 
+    private bool isTriggerPressed =true;
+
 
     //Rotate the object with the mouse
-    void OnMouseDrag()
+    public void OnTriggerDrag()
     {
-        float XaxisRotation = Input.GetAxis("Mouse X") * rotationSpeed;
-        float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSpeed;
-        //select the axis by which you want to rotate the GameObject
-        transform.RotateAround(Vector3.down, XaxisRotation);
-        transform.RotateAround(Vector3.right, YaxisRotation);
-        this.GetComponent<MeshRenderer>().material = Transparant;
+        isTriggerPressed = true;
+        if (isTriggerPressed == true)
+        {
+            float XaxisRotation = Input.GetAxis("Vertical") * rotationSpeed;
+            float YaxisRotation = Input.GetAxis("Horizontal") * rotationSpeed;
+            //select the axis by which you want to rotate the GameObject
+            transform.RotateAround(Vector3.down, XaxisRotation);
+            transform.RotateAround(Vector3.right, YaxisRotation);
+            this.GetComponent<MeshRenderer>().material = Transparant;
+        }
     }
 
     //Go back to original state
-    void OnMouseUp()
+    public void OnTriggerUp()
     {
+        isTriggerPressed = false;
         Quaternion closest = ClosestRotation(allRotations);
         if(Quaternion.Angle(transform.rotation, closest)<20)
         {
