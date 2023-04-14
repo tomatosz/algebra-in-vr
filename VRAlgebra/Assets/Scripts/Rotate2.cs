@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Rotate2 : MonoBehaviour
 {
-    public float rotationSpeed = 0.2f;
+    public float rotationSpeed = 20f;
     static public Quaternion[] allRotations = GenerateRotations();
     public Material Redtransp;
     public Material Greentransp;
@@ -14,16 +15,20 @@ public class Rotate2 : MonoBehaviour
     public bool Tetraok=true;
     private int[] teraederrotationsindex = { 0, 2, 5, 8, 16, 17, 18, 19, 20, 21, 22, 23 };
     public InputActionProperty rightHandVelocity;
-    public Vector3 velocity { get; private set; } = Vector3.zero;
+    public Vector3 velocity { get; private set; } = new Vector3(3f,3f,3f);
 
     private bool isTriggerPressed =true;
     
-    
+    void Update()
+    {
+        velocity = rightHandVelocity.action.ReadValue<Vector3>();
+        Debug.Log(velocity.ToString());
+    }
 
     //Rotate the object with the mouse
     public void OnTriggerDrag()
     {
-        velocity = rightHandVelocity.action.ReadValue<Vector3>();
+                
         isTriggerPressed = true;
         if (isTriggerPressed == true)
         {

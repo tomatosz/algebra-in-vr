@@ -2123,7 +2123,7 @@
                 {
                     "name": "",
                     "id": "4e23c69e-c0f6-423f-a00b-0a6d02d25a05",
-                    "path": "<XRController>{RightHand}/deviceVelocity",
+                    "path": "<OculusTouchController>{RightHand}/devicePose/velocity",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
