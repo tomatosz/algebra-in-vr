@@ -1,37 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Rotate2 : MonoBehaviour
 {
-
-    public float rotationSpeed = 0.2f;
+    public float rotationSpeed = 20f;
     static public Quaternion[] allRotations = GenerateRotations();
     public Material Redtransp;
     public Material Greentransp;
     public Material Transparant;
-    public bool Tetraok=true;
+    public bool Tetraok = true;
     private int[] teraederrotationsindex = { 0, 2, 5, 8, 16, 17, 18, 19, 20, 21, 22, 23 };
     public InputActionProperty rightHandVelocity;
+    public Vector3 velocity { get; private set; } = new Vector3(3f, 3f, 3f);
 
+    private bool isTriggerPressed = true;
+
+    void Update()
+    {
+        velocity = rightHandVelocity.action.ReadValue<Vector3>();
+        Debug.Log(velocity.ToString());
+    }
 
     //Rotate the object with the mouse
-    void OnMouseDrag()
+    public void OnTriggerDrag()
     {
-        float XaxisRotation = Input.GetAxis("Mouse X") * rotationSpeed;
-        float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSpeed;
-        //select the axis by which you want to rotate the GameObject
-        transform.RotateAround(Vector3.down, XaxisRotation);
-        transform.RotateAround(Vector3.right, YaxisRotation);
-        this.GetComponent<MeshRenderer>().material = Transparant;
+
+        isTriggerPressed = true;
+        if (isTriggerPressed == true)
+        {
+            float XaxisRotation = velocity.x * rotationSpeed;
+            float YaxisRotation = velocity.y * rotationSpeed;
+            //select the axis by which you want to rotate the GameObject
+            transform.RotateAround(Vector3.down, XaxisRotation);
+            transform.RotateAround(Vector3.right, YaxisRotation);
+            this.GetComponent<MeshRenderer>().material = Transparant;
+        }
     }
 
     //Go back to original state
-    void OnMouseUp()
+    public void OnTriggerUp()
     {
+        isTriggerPressed = false;
         Quaternion closest = ClosestRotation(allRotations);
-        if(Quaternion.Angle(transform.rotation, closest)<20)
+        if (Quaternion.Angle(transform.rotation, closest) < 20)
         {
             StartCoroutine(PerformRotation(closest));
             this.GetComponent<MeshRenderer>().material = Greentransp;
@@ -75,7 +90,7 @@ public class Rotate2 : MonoBehaviour
         for (int i = 0; i <= 2; i++)
             allRotations[i + 10] = Quaternion.AngleAxis(180, new Vector3((i + 1) % 3 - 1, (i + 2) % 3 - 1, i % 3 - 1));
         for (int i = 0; i <= 2; i++)
-            allRotations[i + 13] = Quaternion.AngleAxis(180, new Vector3(((i + 2) % 3 - 1)* ((i + 2) % 3 - 1), ((i + 1) % 3 - 1)* ((i + 1) % 3 - 1), (i % 3 - 1)* (i % 3 - 1)));
+            allRotations[i + 13] = Quaternion.AngleAxis(180, new Vector3(((i + 2) % 3 - 1) * ((i + 2) % 3 - 1), ((i + 1) % 3 - 1) * ((i + 1) % 3 - 1), (i % 3 - 1) * (i % 3 - 1)));
         //
         for (int i = 0; i <= 1; i += 1)
         {
@@ -91,8 +106,8 @@ public class Rotate2 : MonoBehaviour
     //Finded the nearest Rotation
     Quaternion ClosestRotation(Quaternion[] rotations)
     {
-        int indexclosest=0;
-        
+        int indexclosest = 0;
+
         Quaternion closest = rotations[0];
         for (int i = 0; i < rotations.Length; i++)
         {
@@ -103,14 +118,14 @@ public class Rotate2 : MonoBehaviour
             }
         }
         this.Tetraok = false;
-        for(int j=0;j<12;j++)
+        for (int j = 0; j < 12; j++)
         {
             if (indexclosest == teraederrotationsindex[j])
             {
                 this.Tetraok = true;
-                
+
             }
-            
+
         }
         return closest;
     }
