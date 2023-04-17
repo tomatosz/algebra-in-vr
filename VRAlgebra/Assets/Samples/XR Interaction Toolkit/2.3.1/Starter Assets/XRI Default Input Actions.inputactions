@@ -2206,6 +2206,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Velocities",
+            "id": "2d02ee6c-eaa7-493a-b72c-8fed541cdb2d",
+            "actions": [
+                {
+                    "name": "VelocityRight",
+                    "type": "Value",
+                    "id": "fc3cca59-e4c9-410e-9003-7337c867045f",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1bca4bc7-01ab-4efd-b636-6baae9d56e8a",
+                    "path": "<OculusTouchController>{RightHand}/devicePose/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "VelocityRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
