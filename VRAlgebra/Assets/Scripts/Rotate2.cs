@@ -64,7 +64,11 @@ public class Rotate2 : MonoBehaviour
             this.GetComponent<MeshRenderer>().material = Greentransp;
         }
         else
+        {
             this.GetComponent<MeshRenderer>().material = Redtransp;
+            Tetraok = false;
+        }
+            
 
     }
 
@@ -129,7 +133,7 @@ public class Rotate2 : MonoBehaviour
                 indexclosest = i;
             }
         }
-        this.Tetraok = false;
+        
         for (int j = 0; j < 12; j++)
         {
             if (indexclosest == teraederrotationsindex[j])

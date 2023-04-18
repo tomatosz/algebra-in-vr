@@ -14,7 +14,7 @@ public class SetupGame : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetFloat("PlayerPosx", 0);     // save default player position
-        PlayerPrefs.SetFloat("PlayerPosy", 0);
+        PlayerPrefs.SetFloat("PlayerPosy", 4);
         PlayerPrefs.SetFloat("PlayerPosz", -7);
         PlayerPrefs.SetFloat("PlayerRotx", 0);     // save default player rotation
         PlayerPrefs.SetFloat("PlayerRoty", 0);
