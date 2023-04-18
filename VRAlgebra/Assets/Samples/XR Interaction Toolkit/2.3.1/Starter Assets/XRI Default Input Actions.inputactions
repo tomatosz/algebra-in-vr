@@ -2225,7 +2225,7 @@
                 {
                     "name": "",
                     "id": "1bca4bc7-01ab-4efd-b636-6baae9d56e8a",
-                    "path": "<OculusTouchController>{RightHand}/devicePose/position",
+                    "path": "<OculusTouchController>{RightHand}/pointer/velocity",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
