@@ -35,6 +35,14 @@ public class ChooseAxis : MonoBehaviour
     private bool isTriggerPressed = false;
 
 
+    private Quaternion StartPosition;
+
+    void start()
+    {
+        StartPosition = this.transform.rotation;
+    }
+
+
     void Update()
     {
         //Change the axis depending on which button you press
@@ -62,6 +70,8 @@ public class ChooseAxis : MonoBehaviour
         if (ResetButton.action.WasPressedThisFrame())
         {
             actions.Clear();
+            
+            this.transform.rotation = StartPosition;
         }
 
         if (Input.GetKeyDown("p"))
