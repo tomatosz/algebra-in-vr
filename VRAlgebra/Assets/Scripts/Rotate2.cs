@@ -15,6 +15,8 @@ public class Rotate2 : MonoBehaviour
     public Material Transparant;
     public bool Tetraok = true;
     private int[] teraederrotationsindex = { 0, 2, 5, 8, 16, 17, 18, 19, 20, 21, 22, 23 };
+
+    //VR
     public InputActionProperty rightHandVelocity;
     public GameObject PlayerPosition;
     public Vector3 velocity { get; private set; } = new Vector3(3f, 3f, 3f);

@@ -1,14 +1,17 @@
-using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 [RequireComponent(typeof(MeshFilter))]
 public class DodecahedronRotateIso : MonoBehaviour
 {
 
 
-    public float rotationSpeed = 0.2f;
+    public float rotationSpeed = 50f;
     public int goodrotation = 0; //0wit 1groen 2rood
 
 
@@ -43,24 +46,47 @@ public class DodecahedronRotateIso : MonoBehaviour
 
     static public Quaternion[] CalcAllRotations = GenerateRotationsDodecahedron();
 
+    //VR
+    public InputActionProperty rightHandVelocity;
+    public GameObject PlayerPosition;
+    public Vector3 velocity { get; private set; } = new Vector3(3f, 3f, 3f);
 
+    private bool isTriggerPressed = false;
+
+    void Update()
+    {
+        velocity = rightHandVelocity.action.ReadValue<Vector3>();
+        if (isTriggerPressed == true)
+        {
+            float YaxisRotation = 0f;
+            float XaxisRotation = 0f;
+            Debug.Log(velocity.ToString());
+            if (Math.Abs(velocity.x) > 0.1 * Math.Abs(velocity.y))
+                XaxisRotation = velocity.x * rotationSpeed;
+            if (Math.Abs(velocity.y) > 0.1 * Math.Abs(velocity.x))
+                YaxisRotation = velocity.y * rotationSpeed;
+
+            //select the axis by which you want to rotate the GameObject
+            transform.RotateAround(Vector3.down, XaxisRotation);
+            transform.RotateAround(new Vector3(-(PlayerPosition.transform.position.z - this.transform.position.z), 0, PlayerPosition.transform.position.x - this.transform.position.x), YaxisRotation);
+            goodrotation = 0;
+        }
+
+    }
 
     //Rotate the object with the mouse
-    void OnMouseDrag()
+    public void OnTriggerDrag()
     {
-        goodrotation = 0;
-        float XaxisRotation = Input.GetAxis("Mouse X") * rotationSpeed;
-        float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSpeed;
-        //select the axis by which you want to rotate the GameObject
-        transform.RotateAround(Vector3.down, XaxisRotation);
-        transform.RotateAround(Vector3.right, YaxisRotation);
 
+        isTriggerPressed = true;
+        
 
     }
 
     //Go back to original state
-    void OnMouseUp()
+    public void OnTriggerUp()
     {
+        isTriggerPressed = false;
         Quaternion closest = ClosestRotation(CalcAllRotations);
         if (Quaternion.Angle(transform.rotation, closest) < 30)
         {
@@ -73,7 +99,12 @@ public class DodecahedronRotateIso : MonoBehaviour
             goodrotation = 2;
 
         }
+
     }
+
+    
+
+   
     IEnumerator PerformRotation(Quaternion targetRotation)
     {
         float progress = 0f;
