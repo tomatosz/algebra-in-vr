@@ -23,6 +23,10 @@ public class Rotate2 : MonoBehaviour
 
     private bool isTriggerPressed = false;
 
+    void Start()
+    {
+        this.GetComponent<MeshRenderer>().material = Transparant;
+    }
     void Update()
     {
         velocity = rightHandVelocity.action.ReadValue<Vector3>();

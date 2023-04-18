@@ -9,6 +9,7 @@ public class Octahedron : MonoBehaviour
 
     Vector3[] vertices;
     int[] triangles;
+    public GameObject kubus;
 
     void Start()
     {
@@ -17,6 +18,11 @@ public class Octahedron : MonoBehaviour
 
         CreateOctahedron();
         Updatemesh();
+    }
+
+    void Update()
+    {
+        this.GetComponent<MeshRenderer>().material = kubus.GetComponent<MeshRenderer>().material;
     }
 
     void CreateOctahedron()

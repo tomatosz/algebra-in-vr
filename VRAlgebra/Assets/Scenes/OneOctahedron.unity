@@ -499,7 +499,7 @@ MonoBehaviour:
   rotationSpeed: 0.2
   Redtransp: {fileID: 2100000, guid: 66e5a84d5bc2fb946bff6a453023cb53, type: 2}
   Greentransp: {fileID: 2100000, guid: 212ed3827d606884b9e2ff48dfdc815a, type: 2}
-  Transparant: {fileID: 2100000, guid: 602d3c6ba43da354cbd25d6e911dc339, type: 2}
+  Transparant: {fileID: 2100000, guid: 8ccefbda233b5d14584254df10b5e010, type: 2}
   Tetraok: 1
   rightHandVelocity:
     m_UseReference: 1
@@ -780,6 +780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bd764034544b974db6f218353f4ea2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kubus: {fileID: 1015865730}
 --- !u!65 &1325653580
 BoxCollider:
   m_ObjectHideFlags: 0
