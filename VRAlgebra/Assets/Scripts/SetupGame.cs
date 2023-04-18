@@ -14,14 +14,14 @@ public class SetupGame : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetFloat("PlayerPosx", 0);     // save default player position
-        PlayerPrefs.SetFloat("PlayerPosy", 0);
+        PlayerPrefs.SetFloat("PlayerPosy", 4);
         PlayerPrefs.SetFloat("PlayerPosz", -7);
         PlayerPrefs.SetFloat("PlayerRotx", 0);     // save default player rotation
         PlayerPrefs.SetFloat("PlayerRoty", 0);
         PlayerPrefs.SetFloat("PlayerRotz", 0);
 
 
-        transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerPosx"), PlayerPrefs.GetFloat("PlayerPosy"), PlayerPrefs.GetFloat("PlayerPosz"));  // set player position and rotation to match default settings
+        transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerPosx"), 4, PlayerPrefs.GetFloat("PlayerPosz"));  // set player position and rotation to match default settings
         transform.eulerAngles = new Vector3(PlayerPrefs.GetFloat("PlayerRotx"), PlayerPrefs.GetFloat("PlayerRoty"), PlayerPrefs.GetFloat("PlayerRotz"));
         
         
