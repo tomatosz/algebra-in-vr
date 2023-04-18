@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 204198274}
   - component: {fileID: 204198275}
   - component: {fileID: 204198276}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,9 +159,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 0.2
-  Redtransp: {fileID: 2100000, guid: 602d3c6ba43da354cbd25d6e911dc339, type: 2}
-  Greentransp: {fileID: 2100000, guid: 602d3c6ba43da354cbd25d6e911dc339, type: 2}
-  Transparant: {fileID: 2100000, guid: 602d3c6ba43da354cbd25d6e911dc339, type: 2}
+  Redtransp: {fileID: 2100000, guid: 66e5a84d5bc2fb946bff6a453023cb53, type: 2}
+  Greentransp: {fileID: 2100000, guid: 212ed3827d606884b9e2ff48dfdc815a, type: 2}
+  Transparant: {fileID: 2100000, guid: 8ccefbda233b5d14584254df10b5e010, type: 2}
   Tetraok: 1
   rightHandVelocity:
     m_UseReference: 1
@@ -196,7 +196,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204198268}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
