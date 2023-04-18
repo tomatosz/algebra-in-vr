@@ -1,12 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ChooseAxis : MonoBehaviour
 {
 
-    public float rotationSpeed = 0.2f;
+    public float rotationSpeed = 1f;
     static public Quaternion[] allRotations = GenerateRotationsCube();
     public Vector3 axis = new Vector3(0, 1, 0);
 
@@ -24,6 +27,20 @@ public class ChooseAxis : MonoBehaviour
     public InputActionProperty ToggleAxis2;
     public InputActionProperty ResetButton;
 
+    //VR
+    public InputActionProperty rightHandVelocity;
+    public GameObject PlayerPosition;
+    public Vector3 velocity { get; private set; } = new Vector3(3f, 3f, 3f);
+
+    private bool isTriggerPressed = false;
+
+
+    private Quaternion StartPosition;
+
+    void start()
+    {
+        StartPosition = this.transform.rotation;
+    }
 
 
     void Update()
@@ -53,6 +70,8 @@ public class ChooseAxis : MonoBehaviour
         if (ResetButton.action.WasPressedThisFrame())
         {
             actions.Clear();
+            
+            this.transform.rotation = StartPosition;
         }
 
         if (Input.GetKeyDown("p"))
@@ -64,32 +83,39 @@ public class ChooseAxis : MonoBehaviour
                     result += actions[k];
             }
         }
+
+        velocity = rightHandVelocity.action.ReadValue<Vector3>();
+        if (isTriggerPressed == true)
+        {
+            
+            float YaxisRotation = 0f;
+            float XaxisRotation = 0f;
+            Debug.Log(velocity.ToString());
+            if (Math.Abs(velocity.x) > 0.1 * Math.Abs(velocity.y))
+                XaxisRotation = -velocity.x * rotationSpeed;
+            if (Math.Abs(velocity.y) > 0.1 * Math.Abs(velocity.x))
+                YaxisRotation = velocity.y * rotationSpeed;
+
+            //select the axis by which you want to rotate the GameObject
+            transform.RotateAround(axis, XaxisRotation);
+        }
     }
 
-
-    void OnMouseDown()
+    public void OnTriggerDrag()
     {
+
+        isTriggerPressed = true;
+        canChangeAxis = false;
         //Save our current rotation to recognize what rotation we eventualy did
         if (canChangeAxis == true)
         {
             previousRotation = transform.rotation;
         }
-
     }
 
-    //Rotate the object with the mouse
-    void OnMouseDrag()
+    public void OnTriggerUp()
     {
-        canChangeAxis = false;
-        float XaxisRotation = -Input.GetAxis("Mouse X") * rotationSpeed;
-        float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSpeed;
-        transform.RotateAround(axis, XaxisRotation);
-
-    }
-
-
-    void OnMouseUp()
-    {
+        isTriggerPressed = false;
         //Magnetize to a symmetry if we are close enough and check what rotation we did
         Quaternion closest = ClosestRotation(allRotations);
         //StartCoroutine(PerformRotation(closest));
@@ -101,7 +127,10 @@ public class ChooseAxis : MonoBehaviour
             previousRotation = closest;
             canChangeAxis = true;
         }
+
     }
+
+   
 
     //Perform the rotation to a target rotation
     IEnumerator PerformRotation(Quaternion targetRotation)
