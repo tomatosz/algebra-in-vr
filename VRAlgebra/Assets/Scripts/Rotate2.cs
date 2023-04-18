@@ -47,6 +47,7 @@ public class Rotate2 : MonoBehaviour
     {
 
         isTriggerPressed = true;
+        this.Tetraok = false;
 
     }
 
