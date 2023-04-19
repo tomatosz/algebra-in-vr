@@ -37,7 +37,7 @@ public class ChooseAxis : MonoBehaviour
 
     private Quaternion StartPosition;
 
-    void start()
+    void Start()
     {
         StartPosition = this.transform.rotation;
     }

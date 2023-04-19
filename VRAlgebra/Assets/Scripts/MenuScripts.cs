@@ -24,22 +24,25 @@ public class MenuScripts : MonoBehaviour
     {
         if (MenuButton.action.WasPressedThisFrame())
         {
-            SavePlayerPositionScript();
+            // SavePlayerPositionScript();
             CallMainMenu();
             SetupScene.RotateToggle = false;  // make object in the room non-interactible while the menu is open
         }
     }
 
     // function to save player position before scene switch so the position can be used in the new scene
-    public void SavePlayerPositionScript()
-    {
-        PlayerPrefs.SetFloat("PlayerPosx", Player.transform.position.x);
-        PlayerPrefs.SetFloat("PlayerPosy", Player.transform.position.y);
-        PlayerPrefs.SetFloat("PlayerPosz", Player.transform.position.z);
-        PlayerPrefs.SetFloat("PlayerRotx", Player.transform.rotation.eulerAngles.x);
-        PlayerPrefs.SetFloat("PlayerRoty", Player.transform.rotation.eulerAngles.y);
-        PlayerPrefs.SetFloat("PlayerRotz", Player.transform.rotation.eulerAngles.z);
-    }
+    // removed to avoid unwanted interactions
+
+
+    // public void SavePlayerPositionScript()
+    // {
+        // PlayerPrefs.SetFloat("PlayerPosx", Player.transform.position.x);
+        // PlayerPrefs.SetFloat("PlayerPosy", Player.transform.position.y);
+        // PlayerPrefs.SetFloat("PlayerPosz", Player.transform.position.z);
+        // PlayerPrefs.SetFloat("PlayerRotx", Player.transform.rotation.eulerAngles.x);
+        // PlayerPrefs.SetFloat("PlayerRoty", Player.transform.rotation.eulerAngles.y);
+        // PlayerPrefs.SetFloat("PlayerRotz", Player.transform.rotation.eulerAngles.z);
+    // }
 
     // functions to open and close different menus
 
@@ -117,34 +120,34 @@ public class MenuScripts : MonoBehaviour
 
     public void CallOneTetra()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("OneTetraeder");
 
     }
 
     public void CallOneCube()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("OneCube");
 
     }
 
     public void CallOneOcta()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("OneOctahedron");
 
     }
 
     public void CallOneDodeca()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("OneDodecahedron");
     }
 
     public void CallOneIsoca()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("OneIsocahedron");
 
     }
@@ -153,34 +156,34 @@ public class MenuScripts : MonoBehaviour
 
     public void CallTwoTetra()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("TwoTetraeder");
 
     }
 
     public void CallTwoCube()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("TwoCube");
 
     }
 
     public void CallTwoOcta()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("TwoOctahedron");
 
     }
 
     public void CallTwoDodeca()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("TwoDodecahedron");
     }
 
     public void CallTwoIsoca()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("TwoIsocahedron");
 
     }
@@ -190,19 +193,19 @@ public class MenuScripts : MonoBehaviour
 
     public void CallTetraInCube()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("Cube with Tetraeder");
     }
 
     public void CallOctaInCube()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       //  SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("Cube with Octahedron");
     }
 
     public void CallIsoInDodeca()
     {
-        SavePlayerPositionScript(); // save player position so new scene can start in same position
+       // SavePlayerPositionScript(); // save player position so new scene can start in same position
         SceneManager.LoadScene("Isocahedron vs Dodecahedron");
     }
 

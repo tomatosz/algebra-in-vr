@@ -35,7 +35,7 @@ public class ChooseAxis2 : MonoBehaviour
     private bool isTriggerPressed = false;
     private Quaternion StartPosition;
 
-    void start()
+    void Start()
     {
         StartPosition = this.transform.rotation;
     }
