@@ -21,7 +21,7 @@ public class SetupGame : MonoBehaviour
         PlayerPrefs.SetFloat("PlayerRotz", 0);
 
 
-        transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerPosx"), 4, PlayerPrefs.GetFloat("PlayerPosz"));  // set player position and rotation to match default settings
+        transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerPosx"), PlayerPrefs.GetFloat("PlayerPosy"), PlayerPrefs.GetFloat("PlayerPosz"));  // set player position and rotation to match default settings
         transform.eulerAngles = new Vector3(PlayerPrefs.GetFloat("PlayerRotx"), PlayerPrefs.GetFloat("PlayerRoty"), PlayerPrefs.GetFloat("PlayerRotz"));
         
         
